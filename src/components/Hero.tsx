@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-primary"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-primary pt-[100px]"
     >
       {/* Background effects */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(198,137,138,0.06),transparent_70%)]" />
