@@ -12,9 +12,9 @@ export default function SectionHeading({
   light = false,
 }: SectionHeadingProps) {
   return (
-    <div className={`mb-12 ${centered ? "text-center" : ""}`}>
+    <div className={`mb-14 ${centered ? "text-center" : ""}`}>
       {subtitle && (
-        <p className="mb-2 text-sm font-semibold tracking-widest uppercase text-rose-gold">
+        <p className={`mb-3 text-sm font-semibold tracking-[0.25em] uppercase ${light ? "text-white/60" : "text-rose-gold"}`}>
           {subtitle}
         </p>
       )}
@@ -25,7 +25,14 @@ export default function SectionHeading({
       >
         {title}
       </h2>
-      <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-rose-gold" />
+      {/* Decorative divider */}
+      <div className={`mt-5 flex items-center justify-center gap-3 ${centered ? "" : "justify-start"}`}>
+        <div className={`h-px w-8 ${light ? "bg-white/30" : "bg-rose-gold/30"}`} />
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className={light ? "text-white/40" : "text-rose-gold/50"}>
+          <path d="M8 1L9.5 6.5L15 8L9.5 9.5L8 15L6.5 9.5L1 8L6.5 6.5Z" fill="currentColor" />
+        </svg>
+        <div className={`h-px w-8 ${light ? "bg-white/30" : "bg-rose-gold/30"}`} />
+      </div>
     </div>
   );
 }
