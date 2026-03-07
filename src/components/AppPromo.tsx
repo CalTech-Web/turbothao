@@ -39,7 +39,7 @@ export default function AppPromo() {
   return (
     <section className="relative bg-primary-light py-28 md:py-36 overflow-hidden">
       <div className="absolute inset-0 bg-noise" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(198,137,138,0.05),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(245,128,170,0.05),transparent_60%)]" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose-gold/8 to-transparent" />
 
       {/* Floating decorations */}

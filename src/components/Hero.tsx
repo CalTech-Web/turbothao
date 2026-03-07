@@ -6,12 +6,25 @@ export default function Hero() {
       id="hero"
       className="relative flex min-h-screen items-center justify-center overflow-hidden bg-primary pt-[100px]"
     >
+      {/* Video background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover opacity-20"
+      >
+        <source src="/hero-bg.mp4" type="video/mp4" />
+      </video>
+      {/* Dark overlay on video */}
+      <div className="absolute inset-0 bg-primary/60" />
+
       {/* Background effects */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(198,137,138,0.06),transparent_70%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(245,128,170,0.06),transparent_70%)]" />
       <div className="absolute inset-0 bg-noise" />
 
       {/* Pulsing glow orb behind content */}
-      <div className="animate-glow-pulse absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-[400px] rounded-full bg-[radial-gradient(circle,rgba(198,137,138,0.12),transparent_70%)] md:h-[600px] md:w-[600px]" />
+      <div className="animate-glow-pulse absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-[400px] rounded-full bg-[radial-gradient(circle,rgba(245,128,170,0.12),transparent_70%)] md:h-[600px] md:w-[600px]" />
 
       {/* Animated sparkle particles */}
       <div className="animate-sparkle-1 absolute top-[20%] left-[12%] h-1.5 w-1.5 rounded-full bg-rose-gold/40" />
@@ -47,7 +60,7 @@ export default function Hero() {
 
       {/* Orbiting ring */}
       <div className="animate-orbit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[350px] w-[350px] rounded-full border border-rose-gold/[0.06] md:h-[500px] md:w-[500px]">
-        <div className="absolute -top-1 left-1/2 h-2 w-2 rounded-full bg-rose-gold/40 shadow-[0_0_8px_rgba(198,137,138,0.4)]" />
+        <div className="absolute -top-1 left-1/2 h-2 w-2 rounded-full bg-rose-gold/40 shadow-[0_0_8px_rgba(245,128,170,0.4)]" />
       </div>
 
       {/* Content */}

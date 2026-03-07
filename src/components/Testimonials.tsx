@@ -5,7 +5,7 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="relative bg-primary py-28 md:py-36 overflow-hidden">
       <div className="absolute inset-0 bg-noise" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(198,137,138,0.04),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(245,128,170,0.04),transparent_60%)]" />
 
       {/* Decorative accents */}
       <svg className="absolute top-20 left-10 opacity-[0.04] animate-pulse-soft" width="40" height="40" viewBox="0 0 40 40" fill="none">
