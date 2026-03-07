@@ -32,6 +32,9 @@ export const metadata: Metadata = {
     "nail art Glendale",
     "spa Glendale AZ",
   ],
+  icons: {
+    icon: "/favicon.png",
+  },
   openGraph: {
     title: "TurboThao Nails and Spa",
     description: "Nail care, waxing, and eyelash extensions in Glendale AZ.",

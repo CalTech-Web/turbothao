@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { NAV_LINKS, BUSINESS_INFO } from "@/lib/constants";
 
 export default function Navbar() {
@@ -23,16 +24,16 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-primary/95 backdrop-blur-xl border-b border-border"
+          ? "bg-primary/95 backdrop-blur-xl"
           : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <a
           href="#hero"
-          className="font-heading text-lg tracking-[0.15em] uppercase text-text-primary transition-colors"
+          className="transition-colors"
         >
-          {BUSINESS_INFO.name}
+          <Image src="/logo.webp" alt={BUSINESS_INFO.name} width={150} height={50} className="h-12 w-auto" priority />
         </a>
 
         {/* Desktop Nav */}
