@@ -14,24 +14,23 @@ export default function SectionHeading({
   return (
     <div className={`mb-14 ${centered ? "text-center" : ""}`}>
       {subtitle && (
-        <p className={`mb-3 text-sm font-semibold tracking-[0.25em] uppercase ${light ? "text-white/60" : "text-rose-gold"}`}>
+        <p className={`mb-3 text-xs font-medium tracking-[0.3em] uppercase ${light ? "text-white/50" : "text-rose-gold"}`}>
           {subtitle}
         </p>
       )}
       <h2
-        className={`font-heading text-3xl font-bold md:text-4xl lg:text-5xl ${
+        className={`font-heading text-4xl font-semibold md:text-5xl lg:text-6xl ${
           light ? "text-white" : "text-charcoal"
         }`}
       >
         {title}
       </h2>
-      {/* Decorative divider */}
-      <div className={`mt-5 flex items-center justify-center gap-3 ${centered ? "" : "justify-start"}`}>
-        <div className={`h-px w-8 ${light ? "bg-white/30" : "bg-rose-gold/30"}`} />
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className={light ? "text-white/40" : "text-rose-gold/50"}>
-          <path d="M8 1L9.5 6.5L15 8L9.5 9.5L8 15L6.5 9.5L1 8L6.5 6.5Z" fill="currentColor" />
+      <div className={`mt-5 flex items-center gap-3 ${centered ? "justify-center" : "justify-start"}`}>
+        <div className={`h-px w-10 ${light ? "bg-white/20" : "bg-rose-gold/20"}`} />
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className={light ? "text-white/30" : "text-rose-gold/30"}>
+          <path d="M6 0.5L7.5 4.5L11.5 6L7.5 7.5L6 11.5L4.5 7.5L0.5 6L4.5 4.5Z" fill="currentColor" />
         </svg>
-        <div className={`h-px w-8 ${light ? "bg-white/30" : "bg-rose-gold/30"}`} />
+        <div className={`h-px w-10 ${light ? "bg-white/20" : "bg-rose-gold/20"}`} />
       </div>
     </div>
   );

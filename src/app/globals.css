@@ -1,19 +1,23 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-rose-gold: #B76E79;
-  --color-rose-gold-light: #D4A0A7;
-  --color-blush: #F8E8E8;
-  --color-cream: #FFF8F0;
-  --color-champagne: #F5E6D3;
-  --color-charcoal: #2D2D2D;
-  --color-warm-gray: #6B6B6B;
-  --color-soft-white: #FEFCFA;
-  --color-deep-plum: #4A2040;
-  --color-gold-accent: #C9A96E;
+  --color-rose-gold: #C4898A;
+  --color-rose-gold-light: #D6AAAB;
+  --color-rose-gold-dark: #A06E6F;
+  --color-blush: #FDF2F2;
+  --color-cream: #FDFAF7;
+  --color-champagne: #F7F0E8;
+  --color-charcoal: #1A1A1A;
+  --color-medium-gray: #4A4A4A;
+  --color-warm-gray: #8A8A8A;
+  --color-light-gray: #F5F5F5;
+  --color-white: #FFFFFF;
+  --color-soft-white: #FEFEFE;
+  --color-accent-dark: #2C2C2C;
+  --color-gold-accent: #D4A76A;
 
-  --font-heading: var(--font-playfair), serif;
-  --font-body: var(--font-lato), sans-serif;
+  --font-heading: var(--font-cormorant), serif;
+  --font-body: var(--font-dm-sans), sans-serif;
 }
 
 html {
@@ -22,7 +26,7 @@ html {
 }
 
 body {
-  background: var(--color-soft-white);
+  background: var(--color-white);
   color: var(--color-charcoal);
   font-family: var(--font-body);
 }
@@ -48,14 +52,14 @@ body {
   50% { transform: translateY(15px) rotate(-3deg); }
 }
 
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
 @keyframes pulse-soft {
   0%, 100% { opacity: 0.3; }
   50% { opacity: 0.6; }
-}
-
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
 }
 
 @keyframes spin-slow {
@@ -86,7 +90,7 @@ body {
 }
 
 .animate-float-slow {
-  animation: float 8s ease-in-out infinite;
+  animation: float-slow 8s ease-in-out infinite;
 }
 
 .animate-pulse-soft {
@@ -97,17 +101,7 @@ body {
   animation: spin-slow 20s linear infinite;
 }
 
-.animate-shimmer {
-  background-size: 200% 100%;
-  animation: shimmer 3s linear infinite;
-}
-
-.bg-pattern-dots {
-  background-image: radial-gradient(circle, var(--color-rose-gold) 1px, transparent 1px);
-  background-size: 30px 30px;
-}
-
 .bg-pattern-dots-light {
-  background-image: radial-gradient(circle, rgba(183, 110, 121, 0.08) 1.5px, transparent 1.5px);
-  background-size: 24px 24px;
+  background-image: radial-gradient(circle, rgba(196, 137, 138, 0.06) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
 }

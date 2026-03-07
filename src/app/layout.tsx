@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Lato } from "next/font/google";
+import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
 });
 
-const lato = Lato({
-  variable: "--font-lato",
-  weight: ["300", "400", "700", "900"],
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -89,7 +90,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${playfair.variable} ${lato.variable} antialiased`}
+        className={`${cormorant.variable} ${dmSans.variable} antialiased`}
       >
         <Navbar />
         <main>{children}</main>

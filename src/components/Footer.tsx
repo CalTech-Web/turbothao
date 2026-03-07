@@ -2,15 +2,15 @@ import { BUSINESS_INFO, CONTACT_INFO, FOOTER_LINKS } from "@/lib/constants";
 
 export default function Footer() {
   return (
-    <footer className="bg-deep-plum text-white">
+    <footer className="bg-charcoal text-white">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <h3 className="mb-4 font-heading text-2xl font-bold">
+            <h3 className="mb-4 font-heading text-2xl font-semibold">
               {BUSINESS_INFO.name}
             </h3>
-            <p className="text-sm leading-relaxed text-white/70">
+            <p className="text-sm leading-relaxed text-white/50">
               Located in Glendale, AZ, TurboThao Nails and Spa offers expert
               nail care, waxing, and rejuvenating spa treatments tailored to
               your needs.
@@ -19,15 +19,15 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="mb-4 font-heading text-lg font-bold">
+            <h4 className="mb-4 font-heading text-lg font-semibold">
               Quick Links
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               {FOOTER_LINKS.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm text-white/70 transition-colors hover:text-rose-gold-light"
+                    className="text-sm text-white/50 transition-colors hover:text-rose-gold-light"
                   >
                     {link.label}
                   </a>
@@ -38,8 +38,8 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="mb-4 font-heading text-lg font-bold">Contact</h4>
-            <div className="space-y-2 text-sm text-white/70">
+            <h4 className="mb-4 font-heading text-lg font-semibold">Contact</h4>
+            <div className="space-y-2.5 text-sm text-white/50">
               <p>{CONTACT_INFO.address}</p>
               <a
                 href={CONTACT_INFO.phoneLink}
@@ -60,8 +60,8 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-white/10 py-6">
-        <p className="text-center text-sm text-white/50">
+      <div className="border-t border-white/8 py-6">
+        <p className="text-center text-sm text-white/30">
           &copy; {new Date().getFullYear()} {BUSINESS_INFO.name}. All Rights
           Reserved.
         </p>

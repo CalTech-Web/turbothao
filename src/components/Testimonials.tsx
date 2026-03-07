@@ -11,7 +11,7 @@ function StarIcon({ className }: { className?: string }) {
 
 function QuoteIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <svg className={className} viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
       <path d="M8 25C8 25 8 18 14 14" />
       <path d="M14 14C10 18 8 22 8 25C8 28 10 30 13 30C16 30 18 28 18 25C18 22 16 20 13 20" />
       <path d="M22 25C22 25 22 18 28 14" />
@@ -22,23 +22,16 @@ function QuoteIcon({ className }: { className?: string }) {
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="relative bg-blush/50 py-20 md:py-28 overflow-hidden">
-      {/* Background decorations */}
-      <div className="absolute top-20 left-10 animate-pulse-soft">
-        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" opacity="0.06">
-          <path d="M30 5L35 25L55 30L35 35L30 55L25 35L5 30L25 25Z" fill="var(--color-rose-gold)" />
+    <section id="testimonials" className="relative bg-cream py-24 md:py-32 overflow-hidden">
+      {/* Decorative accents */}
+      <div className="absolute top-20 left-10 animate-pulse-soft opacity-60">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <path d="M20 3L23 17L37 20L23 23L20 37L17 23L3 20L17 17Z" fill="var(--color-rose-gold)" opacity="0.06" />
         </svg>
       </div>
-      <div className="absolute bottom-20 right-10 animate-pulse-soft" style={{ animationDelay: '2s' }}>
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" opacity="0.06">
-          <path d="M20 2L23 17L38 20L23 23L20 38L17 23L2 20L17 17Z" fill="var(--color-rose-gold)" />
-        </svg>
-      </div>
-
-      {/* Decorative top wave */}
-      <div className="absolute top-0 left-0 right-0">
-        <svg viewBox="0 0 1440 60" fill="none" className="w-full rotate-180">
-          <path d="M0 30C360 60 720 0 1080 30C1260 45 1380 15 1440 30V60H0V30Z" fill="var(--color-soft-white)" fillOpacity="0.5" />
+      <div className="absolute bottom-16 right-12 animate-pulse-soft opacity-60" style={{ animationDelay: '2s' }}>
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <path d="M15 2L17 13L28 15L17 17L15 28L13 17L2 15L13 13Z" fill="var(--color-rose-gold)" opacity="0.06" />
         </svg>
       </div>
 
@@ -49,38 +42,38 @@ export default function Testimonials() {
         />
 
         <div className="grid gap-8 md:grid-cols-3">
-          {TESTIMONIALS.map((testimonial, index) => (
+          {TESTIMONIALS.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="relative rounded-2xl bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-lg overflow-hidden"
+              className="relative rounded-2xl bg-white p-8 border border-rose-gold/8 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-rose-gold/15 overflow-hidden"
             >
-              {/* Accent gradient top */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-rose-gold via-gold-accent to-rose-gold-light" />
+              {/* Subtle top accent */}
+              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose-gold/20 to-transparent" />
 
               {/* Background quote watermark */}
-              <div className="absolute -bottom-2 -right-2 opacity-[0.04]">
+              <div className="absolute -bottom-2 -right-2 opacity-[0.03]">
                 <QuoteIcon className="h-24 w-24" />
               </div>
 
               <div className="relative">
-                <QuoteIcon className="mb-4 h-10 w-10 text-rose-gold/25" />
+                <QuoteIcon className="mb-4 h-8 w-8 text-rose-gold/20" />
 
                 <div className="mb-4 flex gap-0.5">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
-                    <StarIcon key={i} className="h-5 w-5" />
+                    <StarIcon key={i} className="h-4 w-4" />
                   ))}
                 </div>
 
-                <p className="mb-6 leading-relaxed text-warm-gray italic">
+                <p className="mb-8 leading-relaxed text-warm-gray italic">
                   &ldquo;{testimonial.quote}&rdquo;
                 </p>
 
                 <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-rose-gold to-rose-gold-light text-sm font-bold text-white">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-rose-gold/10 font-heading text-sm font-semibold text-rose-gold">
                     {testimonial.name.charAt(0)}
                   </div>
                   <div>
-                    <p className="font-heading text-lg font-bold text-charcoal">
+                    <p className="font-heading text-lg font-semibold text-charcoal">
                       {testimonial.name}
                     </p>
                     <p className="text-xs text-warm-gray">Verified Client</p>
