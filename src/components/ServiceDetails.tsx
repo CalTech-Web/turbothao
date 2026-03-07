@@ -1,108 +1,59 @@
 import { SERVICE_DETAILS } from "@/lib/constants";
 import SectionHeading from "./SectionHeading";
 
-function NailIcon() {
-  return (
-    <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" strokeWidth="1.2" stroke="var(--color-rose-gold)" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 3C11 3 9 5 9 10C9 15 10 20 12 21C14 20 15 15 15 10C15 5 13 3 12 3Z" />
-    </svg>
-  );
-}
-
-function HandIcon() {
-  return (
-    <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" strokeWidth="1.2" stroke="var(--color-rose-gold)" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M8 22V12C8 10 9 8 12 8C15 8 16 10 16 12V22" />
-      <circle cx="12" cy="5" r="2" />
-    </svg>
-  );
-}
-
-function LashDetailIcon() {
-  return (
-    <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" strokeWidth="1.2" stroke="var(--color-rose-gold)" strokeLinecap="round" strokeLinejoin="round">
-      <ellipse cx="12" cy="14" rx="8" ry="5" />
-      <path d="M6 12C5 9 6 6 7 5" />
-      <path d="M9 11C9 8 10 5 11 4" />
-      <path d="M15 11C15 8 14 5 13 4" />
-      <path d="M18 12C19 9 18 6 17 5" />
-    </svg>
-  );
-}
-
-function WaxDetailIcon() {
-  return (
-    <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" strokeWidth="1.2" stroke="var(--color-rose-gold)" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M7 4C7 4 8 2 12 2C16 2 17 4 17 4L18 10L6 10Z" />
-      <path d="M6 10L5 18C5 20 8 22 12 22C16 22 19 20 19 18L18 10" />
-    </svg>
-  );
-}
-
-function SpaIcon() {
-  return (
-    <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" strokeWidth="1.2" stroke="var(--color-rose-gold)" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M6 20C6 20 7 10 15 5C15 5 17 14 9 20" />
-      <path d="M6 20C10 15 15 5 15 5" />
-    </svg>
-  );
-}
-
-const categoryIcons: Record<string, () => React.JSX.Element> = {
-  "nail-services": NailIcon,
-  "manicure-pedicure": HandIcon,
-  "eyelash-eyebrow": LashDetailIcon,
-  "waxing": WaxDetailIcon,
-  "spa-enhancements": SpaIcon,
+const categoryDecorators: Record<string, string> = {
+  "nail-services": "M12 3C11 3 9 5 9 10C9 15 10 20 12 21C14 20 15 15 15 10C15 5 13 3 12 3Z",
+  "manicure-pedicure": "M8 22V12C8 10 9 8 12 8C15 8 16 10 16 12V22",
+  "eyelash-eyebrow": "M4 12C4 12 8 6 12 6C16 6 20 12 20 12",
+  "waxing": "M7 4C7 4 8 2 12 2C16 2 17 4 17 4L18 10L6 10Z",
+  "spa-enhancements": "M6 20C6 20 7 10 15 5C15 5 17 14 9 20",
 };
 
 export default function ServiceDetails() {
   return (
-    <section className="relative py-24 md:py-32 bg-white overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose-gold/10 to-transparent" />
+    <section className="relative bg-primary-light py-28 md:py-36 overflow-hidden">
+      <div className="absolute inset-0 bg-noise" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose-gold/8 to-transparent" />
 
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="relative mx-auto max-w-6xl px-6">
         <SectionHeading
           title="Our Full Menu"
           subtitle="Explore Our Services"
         />
 
-        <div className="space-y-10">
-          {SERVICE_DETAILS.map((category, index) => {
-            const CategoryIcon = categoryIcons[category.id] || NailIcon;
-            return (
-              <div
-                key={category.id}
-                id={category.id}
-                className={`rounded-2xl border border-rose-gold/8 p-8 md:p-10 ${
-                  index % 2 === 0 ? "bg-cream/50" : "bg-blush/30"
-                }`}
-              >
-                <div className="flex items-center gap-3 mb-8">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-rose-gold/15">
-                    <CategoryIcon />
-                  </div>
-                  <h3 className="font-heading text-2xl font-semibold text-charcoal md:text-3xl">
-                    {category.title}
-                  </h3>
+        <div className="space-y-8">
+          {SERVICE_DETAILS.map((category) => (
+            <div
+              key={category.id}
+              id={category.id}
+              className="border border-border bg-surface p-8 md:p-10"
+            >
+              <div className="flex items-center gap-4 mb-8">
+                <div className="flex h-10 w-10 items-center justify-center border border-border">
+                  <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" strokeWidth="1" stroke="var(--color-rose-gold)" strokeLinecap="round" strokeLinejoin="round" opacity="0.6">
+                    <path d={categoryDecorators[category.id] || categoryDecorators["nail-services"]} />
+                  </svg>
                 </div>
-
-                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                  {category.items.map((item) => (
-                    <div
-                      key={item}
-                      className="group flex items-center gap-3 rounded-xl bg-white px-5 py-3.5 border border-transparent transition-all duration-200 hover:border-rose-gold/10 hover:shadow-sm"
-                    >
-                      <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-rose-gold/5">
-                        <CategoryIcon />
-                      </div>
-                      <span className="text-medium-gray">{item}</span>
-                    </div>
-                  ))}
-                </div>
+                <h3 className="font-heading text-xl tracking-[0.04em] text-text-primary md:text-2xl">
+                  {category.title}
+                </h3>
               </div>
-            );
-          })}
+
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {category.items.map((item) => (
+                  <div
+                    key={item}
+                    className="group flex items-center gap-3 border border-transparent bg-primary-light px-5 py-3.5 transition-all duration-300 hover:border-border hover:bg-surface-light"
+                  >
+                    <svg className="h-3 w-3 shrink-0" viewBox="0 0 12 12" fill="none">
+                      <path d="M6 1L7.2 4.8L11 6L7.2 7.2L6 11L4.8 7.2L1 6L4.8 4.8Z" fill="var(--color-rose-gold)" opacity="0.3" />
+                    </svg>
+                    <span className="text-sm text-text-secondary">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

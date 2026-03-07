@@ -21,17 +21,16 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-white/95 shadow-sm backdrop-blur-md border-b border-rose-gold/10"
-          : "bg-white/80 backdrop-blur-sm"
+          ? "bg-primary/95 backdrop-blur-xl border-b border-border"
+          : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        {/* Logo */}
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <a
           href="#hero"
-          className="font-heading text-2xl font-semibold text-charcoal transition-colors md:text-2xl"
+          className="font-heading text-lg tracking-[0.15em] uppercase text-text-primary transition-colors"
         >
           {BUSINESS_INFO.name}
         </a>
@@ -46,22 +45,18 @@ export default function Navbar() {
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
               >
-                <button
-                  className="flex items-center gap-1 text-sm font-medium text-medium-gray transition-colors hover:text-rose-gold"
-                >
+                <button className="flex items-center gap-1 text-xs font-medium tracking-[0.1em] uppercase text-text-secondary transition-colors hover:text-rose-gold">
                   {link.label}
-                  <svg className="h-4 w-4" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M4 6L8 10L12 6" />
-                  </svg>
+                  <svg className="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><path d="M3 4.5L6 7.5L9 4.5" /></svg>
                 </button>
                 {dropdownOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-56 rounded-xl bg-white py-2 shadow-lg border border-rose-gold/10">
+                  <div className="absolute top-full left-0 mt-3 w-56 rounded-lg bg-surface-light border border-border py-2 shadow-2xl">
                     {link.children.map((child) => (
                       <a
                         key={child.label}
                         href={child.href}
                         onClick={handleLinkClick}
-                        className="block px-4 py-2.5 text-sm text-medium-gray transition-colors hover:bg-blush hover:text-rose-gold"
+                        className="block px-5 py-2.5 text-xs tracking-wider text-text-secondary transition-colors hover:text-rose-gold hover:bg-surface-elevated"
                       >
                         {child.label}
                       </a>
@@ -73,7 +68,7 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-sm font-medium text-medium-gray transition-colors hover:text-rose-gold"
+                className="text-xs font-medium tracking-[0.1em] uppercase text-text-secondary transition-colors hover:text-rose-gold"
               >
                 {link.label}
               </a>
@@ -81,7 +76,7 @@ export default function Navbar() {
           )}
           <a
             href="#contact"
-            className="rounded-full bg-rose-gold px-6 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:bg-rose-gold-dark hover:shadow-md"
+            className="rounded-none border border-rose-gold px-6 py-2.5 text-xs font-medium tracking-[0.15em] uppercase text-rose-gold transition-all duration-300 hover:bg-rose-gold hover:text-primary"
           >
             Book Now
           </a>
@@ -90,37 +85,37 @@ export default function Navbar() {
         {/* Mobile Hamburger */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="text-charcoal lg:hidden"
+          className="text-text-primary lg:hidden"
           aria-label="Toggle menu"
         >
           {isOpen ? (
-            <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><path d="M18 6L6 18M6 6L18 18" /></svg>
+            <svg className="h-5 w-5" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1"><path d="M15 5L5 15M5 5L15 15" /></svg>
           ) : (
-            <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><path d="M3 8H21M3 16H21" /></svg>
+            <svg className="h-5 w-5" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1"><path d="M2 6H18M2 14H18" /></svg>
           )}
         </button>
       </nav>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="border-t border-rose-gold/10 bg-white px-6 py-6 lg:hidden">
+        <div className="border-t border-border bg-primary-light px-6 py-8 lg:hidden">
           {NAV_LINKS.map((link) => (
             <div key={link.label}>
               <a
                 href={link.href}
                 onClick={handleLinkClick}
-                className="block py-3 text-medium-gray transition-colors hover:text-rose-gold"
+                className="block py-3 text-xs tracking-[0.1em] uppercase text-text-secondary transition-colors hover:text-rose-gold"
               >
                 {link.label}
               </a>
               {link.children && (
-                <div className="ml-4 border-l border-rose-gold/15">
+                <div className="ml-4 border-l border-border">
                   {link.children.map((child) => (
                     <a
                       key={child.label}
                       href={child.href}
                       onClick={handleLinkClick}
-                      className="block py-2 pl-4 text-sm text-warm-gray transition-colors hover:text-rose-gold"
+                      className="block py-2 pl-4 text-xs tracking-wider text-text-muted transition-colors hover:text-rose-gold"
                     >
                       {child.label}
                     </a>
@@ -132,7 +127,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={handleLinkClick}
-            className="mt-4 block rounded-full bg-rose-gold px-6 py-3 text-center font-medium text-white"
+            className="mt-6 block border border-rose-gold py-3 text-center text-xs tracking-[0.15em] uppercase text-rose-gold"
           >
             Book Now
           </a>
