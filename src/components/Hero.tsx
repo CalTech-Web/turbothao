@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { BUSINESS_INFO } from "@/lib/constants";
 
 export default function Hero() {
@@ -39,18 +40,17 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Video */}
+          {/* Right Image */}
           <div className="animate-fade-up-delay relative">
             <div className="overflow-hidden rounded-t-[200px] rounded-b-2xl shadow-[0_0_30px_rgba(0,0,0,0.12)] md:rounded-t-[300px]">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
+              <Image
+                src="/hero-image.jpeg"
+                alt="Nail spa services"
+                width={600}
+                height={700}
                 className="h-[400px] w-full object-cover md:h-[550px]"
-              >
-                <source src="/hero-bg.mp4" type="video/mp4" />
-              </video>
+                priority
+              />
             </div>
           </div>
         </div>
