@@ -7,16 +7,16 @@
   --color-surface: #111111;
   --color-surface-light: #1C1C1C;
   --color-surface-elevated: #222222;
-  --color-rose-gold: #F580AA;
-  --color-rose-gold-light: #F9A8C4;
-  --color-rose-gold-dark: #D4608E;
-  --color-rose-gold-glow: rgba(245, 128, 170, 0.15);
+  --color-rose-gold: #FF69B4;
+  --color-rose-gold-light: #FF8CC8;
+  --color-rose-gold-dark: #E84899;
+  --color-rose-gold-glow: rgba(255, 105, 180, 0.2);
   --color-gold: #D4A76A;
   --color-text-primary: #F5F0EB;
   --color-text-secondary: #9A9490;
   --color-text-muted: #5C5856;
-  --color-border: rgba(245, 128, 170, 0.12);
-  --color-border-hover: rgba(245, 128, 170, 0.25);
+  --color-border: rgba(255, 105, 180, 0.18);
+  --color-border-hover: rgba(255, 105, 180, 0.35);
   --color-white: #FFFFFF;
 
   --font-heading: var(--font-cinzel), serif;

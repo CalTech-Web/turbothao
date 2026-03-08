@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-primary/60" />
 
       {/* Background effects */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(245,128,170,0.06),transparent_70%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,105,180,0.06),transparent_70%)]" />
       <div className="absolute inset-0 bg-noise" />
 
       {/* Animated rising lines */}

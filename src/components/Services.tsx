@@ -60,7 +60,7 @@ export default function Services() {
   return (
     <section id="services" className="relative bg-primary py-28 md:py-36 overflow-hidden">
       <div className="absolute inset-0 bg-noise" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(245,128,170,0.04),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,105,180,0.04),transparent_60%)]" />
 
       <div className="relative mx-auto max-w-6xl px-6">
         <SectionHeading
