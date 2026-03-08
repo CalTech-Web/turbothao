@@ -39,36 +39,32 @@ const iconMap = {
 
 export default function About() {
   return (
-    <section id="about" className="relative bg-primary-light py-28 md:py-36 overflow-hidden">
-      <div className="absolute inset-0 bg-noise" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose-gold/8 to-transparent" />
-
-      <div className="relative mx-auto max-w-6xl px-6">
+    <section id="about" className="bg-white py-28 md:py-36">
+      <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           title={BUSINESS_INFO.aboutTitle}
           subtitle={BUSINESS_INFO.aboutSubtitle}
+          scriptText="about us"
         />
-        <p className="mx-auto mb-20 max-w-2xl text-center text-sm leading-relaxed text-text-secondary">
+        <p className="mx-auto mb-20 max-w-2xl text-center text-base italic leading-relaxed text-text-secondary">
           {BUSINESS_INFO.aboutDescription}
         </p>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-3">
           {EXPERTISE.map((item) => {
             const Icon = iconMap[item.icon];
             return (
               <div
                 key={item.title}
-                className="group relative border border-border bg-surface p-10 text-center transition-all duration-500 hover:border-border-hover"
+                className="group rounded-2xl bg-white p-10 text-center shadow-[0_6px_15px_-10px_rgba(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_25px_-10px_rgba(0,0,0,0.1)]"
               >
-                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose-gold/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-
-                <div className="mx-auto mb-8 flex h-20 w-20 items-center justify-center border border-border transition-all duration-500 group-hover:border-rose-gold/30 group-hover:bg-rose-gold-glow">
-                  <Icon className="h-10 w-10 text-rose-gold/60 transition-colors duration-500 group-hover:text-rose-gold" />
+                <div className="mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-full bg-accent-pink/10 transition-all duration-500 group-hover:bg-accent-pink/20">
+                  <Icon className="h-10 w-10 text-accent-pink transition-colors duration-500" />
                 </div>
-                <h3 className="mb-4 font-heading text-lg tracking-[0.05em] text-text-primary">
+                <h3 className="mb-4 font-heading text-lg font-bold text-text-primary">
                   {item.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-text-muted">
+                <p className="text-sm italic leading-relaxed text-text-muted">
                   {item.description}
                 </p>
               </div>

@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
-import { Cinzel, Raleway } from "next/font/google";
+import { Lora, Mrs_Saint_Delafield } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
-const cinzel = Cinzel({
-  variable: "--font-cinzel",
+const lora = Lora({
+  variable: "--font-lora",
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
-const raleway = Raleway({
-  variable: "--font-raleway",
-  weight: ["300", "400", "500", "600", "700"],
+const mrsSaintDelafield = Mrs_Saint_Delafield({
+  variable: "--font-script",
+  weight: "400",
   subsets: ["latin"],
   display: "swap",
 });
@@ -83,7 +84,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${cinzel.variable} ${raleway.variable} antialiased`}>
+      <body className={`${lora.variable} ${mrsSaintDelafield.variable} antialiased`}>
         <Navbar />
         <main>{children}</main>
         <Footer />

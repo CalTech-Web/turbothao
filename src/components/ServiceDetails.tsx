@@ -11,14 +11,12 @@ const categoryDecorators: Record<string, string> = {
 
 export default function ServiceDetails() {
   return (
-    <section className="relative bg-primary-light py-28 md:py-36 overflow-hidden">
-      <div className="absolute inset-0 bg-noise" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose-gold/8 to-transparent" />
-
-      <div className="relative mx-auto max-w-6xl px-6">
+    <section className="bg-white py-28 md:py-36">
+      <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           title="Our Full Menu"
           subtitle="Explore Our Services"
+          scriptText="services"
         />
 
         <div className="space-y-8">
@@ -26,15 +24,15 @@ export default function ServiceDetails() {
             <div
               key={category.id}
               id={category.id}
-              className="border border-border bg-surface p-8 md:p-10"
+              className="rounded-2xl bg-primary-soft p-8 shadow-[0_6px_15px_-10px_rgba(0,0,0,0.06)] md:p-10"
             >
               <div className="flex items-center gap-4 mb-8">
-                <div className="flex h-10 w-10 items-center justify-center border border-border">
-                  <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" strokeWidth="1" stroke="var(--color-rose-gold)" strokeLinecap="round" strokeLinejoin="round" opacity="0.6">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent-pink/10">
+                  <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" strokeWidth="1" stroke="var(--color-accent-pink)" strokeLinecap="round" strokeLinejoin="round">
                     <path d={categoryDecorators[category.id] || categoryDecorators["nail-services"]} />
                   </svg>
                 </div>
-                <h3 className="font-heading text-xl tracking-[0.04em] text-text-primary md:text-2xl">
+                <h3 className="font-heading text-xl font-bold text-text-primary md:text-2xl">
                   {category.title}
                 </h3>
               </div>
@@ -43,12 +41,10 @@ export default function ServiceDetails() {
                 {category.items.map((item) => (
                   <div
                     key={item}
-                    className="group flex items-center gap-3 border border-transparent bg-primary-light px-5 py-3.5 transition-all duration-300 hover:border-border hover:bg-surface-light"
+                    className="group flex items-center gap-3 rounded-xl bg-white px-5 py-3.5 transition-all duration-300 hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)]"
                   >
-                    <svg className="h-3 w-3 shrink-0" viewBox="0 0 12 12" fill="none">
-                      <path d="M6 1L7.2 4.8L11 6L7.2 7.2L6 11L4.8 7.2L1 6L4.8 4.8Z" fill="var(--color-rose-gold)" opacity="0.3" />
-                    </svg>
-                    <span className="text-sm text-text-secondary">{item}</span>
+                    <div className="h-2 w-2 shrink-0 rounded-full bg-accent-pink/40" />
+                    <span className="text-sm italic text-text-secondary">{item}</span>
                   </div>
                 ))}
               </div>

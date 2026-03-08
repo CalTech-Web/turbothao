@@ -58,46 +58,43 @@ const iconMap = {
 
 export default function Services() {
   return (
-    <section id="services" className="relative bg-primary py-28 md:py-36 overflow-hidden">
-      <div className="absolute inset-0 bg-noise" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,105,180,0.04),transparent_60%)]" />
-
-      <div className="relative mx-auto max-w-6xl px-6">
+    <section id="services" className="bg-primary py-28 md:py-36">
+      <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           title="What We Do"
           subtitle="Exceptional Beauty, Tailored for You"
+          scriptText="our lounge"
         />
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {SERVICES.map((service, index) => {
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {SERVICES.map((service) => {
             const Icon = iconMap[service.icon];
             return (
               <div
                 key={service.title}
-                className="group relative border border-border bg-surface p-8 transition-all duration-500 hover:border-border-hover overflow-hidden"
+                className="group rounded-2xl bg-white p-8 shadow-[0_6px_15px_-10px_rgba(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_25px_-10px_rgba(0,0,0,0.1)]"
               >
-                {/* Background watermark */}
-                <div className="absolute -bottom-6 -right-6 opacity-[0.03] transition-opacity group-hover:opacity-[0.06]">
-                  <Icon className="h-36 w-36" />
+                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-accent-pink/10 transition-all duration-500 group-hover:bg-accent-pink/20">
+                  <Icon className="h-7 w-7 text-accent-pink" />
                 </div>
-
-                <div className="relative">
-                  <span className="mb-6 block text-[10px] font-medium tracking-[0.3em] text-text-muted">
-                    0{index + 1}
-                  </span>
-                  <div className="mb-6 flex h-14 w-14 items-center justify-center border border-border transition-all duration-500 group-hover:border-rose-gold/30 group-hover:bg-rose-gold-glow">
-                    <Icon className="h-7 w-7 text-rose-gold/60 transition-colors duration-500 group-hover:text-rose-gold" />
-                  </div>
-                  <h3 className="mb-3 font-heading text-lg tracking-[0.03em] text-text-primary">
-                    {service.title}
-                  </h3>
-                  <p className="text-xs leading-relaxed text-text-muted">
-                    {service.description}
-                  </p>
-                </div>
+                <h3 className="mb-3 font-heading text-lg font-bold text-text-primary">
+                  {service.title}
+                </h3>
+                <p className="text-sm italic leading-relaxed text-text-muted">
+                  {service.description}
+                </p>
               </div>
             );
           })}
+        </div>
+
+        <div className="mt-14 text-center">
+          <a
+            href="#contact"
+            className="inline-block rounded-full bg-accent-pink px-10 py-4 text-sm font-medium text-white shadow-[2px_2px_5px_0px_rgba(21,63,33,0.2)] transition-all duration-300 hover:bg-accent-pink-light hover:shadow-[0_15px_25px_-7px_rgba(0,0,0,0.1)]"
+          >
+            Request An Appointment
+          </a>
         </div>
       </div>
     </section>
