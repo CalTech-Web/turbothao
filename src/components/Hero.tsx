@@ -39,16 +39,16 @@ export default function Hero() {
           <div className="animate-expand-left h-px w-20 bg-gradient-to-l from-transparent to-rose-gold/30" />
         </div>
 
-        <p className="animate-fade-up mb-6 text-xs font-medium tracking-[0.4em] uppercase text-rose-gold/70">
+        <p className="animate-fade-up mb-6 text-xs font-medium tracking-[0.4em] uppercase text-rose-gold">
           Welcome to
         </p>
-        <h1 className="animate-fade-up font-heading text-shimmer text-5xl font-medium tracking-[0.05em] md:text-7xl lg:text-8xl">
+        <h1 className="animate-fade-up font-heading text-5xl font-medium tracking-[0.05em] text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] md:text-7xl lg:text-8xl">
           {BUSINESS_INFO.tagline}
         </h1>
-        <p className="animate-fade-up-delay mt-8 text-lg font-light tracking-wide text-text-secondary md:text-xl">
+        <p className="animate-fade-up-delay mt-8 text-lg tracking-wide text-white/90 md:text-xl">
           {BUSINESS_INFO.headline}
         </p>
-        <p className="animate-fade-up-delay-2 mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-text-muted">
+        <p className="animate-fade-up-delay-2 mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-white/70">
           {BUSINESS_INFO.description}
         </p>
 
