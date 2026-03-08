@@ -12,7 +12,7 @@ export default function Hero() {
         loop
         muted
         playsInline
-        className="absolute inset-0 h-full w-full object-cover opacity-20"
+        className="absolute inset-0 h-full w-full object-cover opacity-25"
       >
         <source src="/hero-bg.mp4" type="video/mp4" />
       </video>
@@ -23,31 +23,6 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(245,128,170,0.06),transparent_70%)]" />
       <div className="absolute inset-0 bg-noise" />
 
-      {/* Pulsing glow orb behind content */}
-      <div className="animate-glow-pulse absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-[400px] rounded-full bg-[radial-gradient(circle,rgba(245,128,170,0.12),transparent_70%)] md:h-[600px] md:w-[600px]" />
-
-      {/* Animated sparkle particles */}
-      <div className="animate-sparkle-1 absolute top-[20%] left-[12%] h-1.5 w-1.5 rounded-full bg-rose-gold/40" />
-      <div className="animate-sparkle-2 absolute top-[35%] right-[15%] h-1 w-1 rounded-full bg-rose-gold/30" />
-      <div className="animate-sparkle-3 absolute top-[65%] left-[20%] h-1 w-1 rounded-full bg-rose-gold/25" />
-      <div className="animate-sparkle-4 absolute top-[25%] right-[25%] h-1.5 w-1.5 rounded-full bg-rose-gold/35" />
-      <div className="animate-sparkle-5 absolute top-[75%] right-[12%] h-1 w-1 rounded-full bg-rose-gold/30" />
-      <div className="animate-sparkle-2 absolute top-[50%] left-[5%] h-0.5 w-0.5 rounded-full bg-rose-gold/40" />
-      <div className="animate-sparkle-4 absolute top-[45%] right-[8%] h-0.5 w-0.5 rounded-full bg-rose-gold/35" />
-      <div className="animate-sparkle-1 absolute top-[80%] left-[40%] h-1 w-1 rounded-full bg-rose-gold/25" />
-
-      {/* Floating elements */}
-      <svg className="animate-float absolute top-24 left-[8%] opacity-[0.08]" width="60" height="60" viewBox="0 0 60 60" fill="none">
-        <circle cx="30" cy="30" r="28" stroke="var(--color-rose-gold)" strokeWidth="0.5" />
-        <circle cx="30" cy="30" r="16" stroke="var(--color-rose-gold)" strokeWidth="0.3" />
-      </svg>
-      <svg className="animate-float-reverse absolute top-40 right-[10%] opacity-[0.06]" width="80" height="80" viewBox="0 0 80 80" fill="none">
-        <path d="M40 5L45 35L75 40L45 45L40 75L35 45L5 40L35 35Z" stroke="var(--color-rose-gold)" strokeWidth="0.5" />
-      </svg>
-      <svg className="animate-float-slow absolute bottom-40 left-[15%] opacity-[0.06]" width="40" height="40" viewBox="0 0 40 40" fill="none">
-        <path d="M20 2L23 17L38 20L23 23L20 38L17 23L2 20L17 17Z" stroke="var(--color-rose-gold)" strokeWidth="0.5" />
-      </svg>
-
       {/* Animated rising lines */}
       <div className="animate-rise-1 absolute bottom-0 left-[25%] h-40 w-px bg-gradient-to-t from-rose-gold/20 to-transparent" />
       <div className="animate-rise-2 absolute bottom-0 right-[30%] h-32 w-px bg-gradient-to-t from-rose-gold/15 to-transparent" />
@@ -55,13 +30,6 @@ export default function Hero() {
 
       {/* Decorative lines */}
       <div className="absolute top-0 left-1/2 h-32 w-px bg-gradient-to-b from-transparent via-rose-gold/10 to-transparent" />
-      <div className="animate-spin-slow absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full border border-rose-gold/[0.04]" />
-      <div className="animate-spin-slow absolute -bottom-60 -left-60 h-[700px] w-[700px] rounded-full border border-rose-gold/[0.03]" style={{ animationDirection: 'reverse', animationDuration: '30s' }} />
-
-      {/* Orbiting ring */}
-      <div className="animate-orbit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[350px] w-[350px] rounded-full border border-rose-gold/[0.06] md:h-[500px] md:w-[500px]">
-        <div className="absolute -top-1 left-1/2 h-2 w-2 rounded-full bg-rose-gold/40 shadow-[0_0_8px_rgba(245,128,170,0.4)]" />
-      </div>
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
