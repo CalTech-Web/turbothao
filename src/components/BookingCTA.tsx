@@ -3,7 +3,7 @@ import { BOOKING_URL } from "@/lib/constants";
 
 export default function BookingCTA() {
   return (
-    <section className="relative overflow-hidden py-20 md:py-28">
+    <section className="relative overflow-hidden py-14 md:py-20">
       {/* Full background image */}
       <Image
         src="/images/cta-bg.webp"
