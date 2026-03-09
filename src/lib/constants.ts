@@ -28,8 +28,8 @@ export const CONTACT_INFO = {
     { days: "Sunday", time: "Closed" },
   ],
   social: {
-    facebook: "#",
-    instagram: "#",
+    facebook: "https://www.facebook.com/turbothao/",
+    yelp: "https://www.yelp.com/biz/turbo-thaos-nails-glendale-2",
   },
   appLinks: {
     ios: "https://apps.apple.com/us/app/turbo-thaos-nails-and-spa/id6740285401",
