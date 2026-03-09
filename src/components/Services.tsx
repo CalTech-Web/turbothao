@@ -38,7 +38,7 @@ const serviceCards = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-primary py-28 md:py-36">
+    <section id="services" className="bg-primary py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           title="What We Do"
@@ -46,7 +46,7 @@ export default function Services() {
           scriptText="our lounge"
         />
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {serviceCards.map((service) => (
             <Link
               key={service.title}
@@ -71,7 +71,7 @@ export default function Services() {
           ))}
         </div>
 
-        <div className="mt-14 text-center">
+        <div className="mt-10 text-center">
           <a
             href={BOOKING_URL}
             target="_blank"

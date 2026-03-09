@@ -12,7 +12,7 @@ export default function SectionHeading({
   centered = true,
 }: SectionHeadingProps) {
   return (
-    <div className={`mb-16 ${centered ? "text-center" : ""}`}>
+    <div className={`mb-12 ${centered ? "text-center" : ""}`}>
       {scriptText && (
         <p className="font-script text-5xl text-accent-pink md:text-7xl">{scriptText}</p>
       )}

@@ -60,10 +60,10 @@ export default function ServicePageLayout({
                 {description}
               </p>
 
-              <h2 className="mt-12 font-heading text-2xl font-bold text-text-primary">
+              <h2 className="mt-10 font-heading text-2xl font-bold text-text-primary">
                 Our {title}
               </h2>
-              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              <div className="mt-5 grid gap-3 sm:grid-cols-2">
                 {services.map((service) => (
                   <div
                     key={service}
@@ -75,10 +75,10 @@ export default function ServicePageLayout({
                 ))}
               </div>
 
-              <h2 className="mt-12 font-heading text-2xl font-bold text-text-primary">
+              <h2 className="mt-10 font-heading text-2xl font-bold text-text-primary">
                 Benefits
               </h2>
-              <ul className="mt-6 space-y-4">
+              <ul className="mt-5 space-y-3">
                 {benefits.map((benefit) => (
                   <li key={benefit} className="flex items-start gap-3">
                     <svg className="mt-1 h-5 w-5 shrink-0 text-accent-pink" viewBox="0 0 20 20" fill="currentColor">
@@ -89,7 +89,7 @@ export default function ServicePageLayout({
                 ))}
               </ul>
 
-              <div className="mt-12">
+              <div className="mt-10">
                 <a
                   href={BOOKING_URL}
                   target="_blank"

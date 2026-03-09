@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-primary py-28 md:py-36">
+    <section id="contact" className="bg-primary py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading title="Get in Touch" subtitle="Contact Us" scriptText="contact" />
 

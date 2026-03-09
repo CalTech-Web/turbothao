@@ -5,9 +5,9 @@ export default function Footer() {
   return (
     <footer>
       {/* Top Section - Beige */}
-      <div className="bg-primary py-16">
+      <div className="bg-primary py-12">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="grid gap-12 md:grid-cols-3">
+          <div className="grid gap-10 md:grid-cols-3">
             <div>
               <h3 className="mb-4 font-heading text-lg font-bold text-text-primary">
                 {BUSINESS_INFO.name}
@@ -69,7 +69,7 @@ export default function Footer() {
       </div>
 
       {/* Middle Section - Green Overlay */}
-      <div className="bg-accent-green-overlay py-8">
+      <div className="bg-accent-green-overlay py-6">
         <div className="mx-auto flex max-w-6xl items-center justify-center gap-6 px-6">
           <p className="text-sm font-medium text-text-primary">Follow Us</p>
           <div className="flex gap-4">
@@ -88,7 +88,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Section - Copyright */}
-      <div className="bg-primary py-6">
+      <div className="bg-primary py-4">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6">
           <p className="text-sm italic text-text-muted">
             &copy; {new Date().getFullYear()} {BUSINESS_INFO.name}. All Rights Reserved.

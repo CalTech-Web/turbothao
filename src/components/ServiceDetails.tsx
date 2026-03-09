@@ -11,7 +11,7 @@ const categoryDecorators: Record<string, string> = {
 
 export default function ServiceDetails() {
   return (
-    <section className="bg-white py-28 md:py-36">
+    <section className="bg-white py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           title="Our Full Menu"
@@ -26,7 +26,7 @@ export default function ServiceDetails() {
               id={category.id}
               className="rounded-2xl bg-primary-soft p-8 shadow-[0_6px_15px_-10px_rgba(0,0,0,0.06)] md:p-10"
             >
-              <div className="flex items-center gap-4 mb-8">
+              <div className="flex items-center gap-4 mb-6">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent-pink/10">
                   <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" strokeWidth="1" stroke="var(--color-accent-pink)" strokeLinecap="round" strokeLinejoin="round">
                     <path d={categoryDecorators[category.id] || categoryDecorators["nail-services"]} />

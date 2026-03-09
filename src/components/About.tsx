@@ -39,14 +39,14 @@ const iconMap = {
 
 export default function About() {
   return (
-    <section id="about" className="bg-white py-28 md:py-36">
+    <section id="about" className="bg-white py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           title={BUSINESS_INFO.aboutTitle}
           subtitle={BUSINESS_INFO.aboutSubtitle}
           scriptText="about us"
         />
-        <p className="mx-auto mb-20 max-w-2xl text-center text-base italic leading-relaxed text-text-secondary">
+        <p className="mx-auto mb-12 max-w-2xl text-center text-base italic leading-relaxed text-text-secondary">
           {BUSINESS_INFO.aboutDescription}
         </p>
 
@@ -56,10 +56,10 @@ export default function About() {
             return (
               <div
                 key={item.title}
-                className="group rounded-2xl bg-white p-10 text-center shadow-[0_6px_15px_-10px_rgba(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_25px_-10px_rgba(0,0,0,0.1)]"
+                className="group rounded-2xl bg-white p-8 text-center shadow-[0_6px_15px_-10px_rgba(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_25px_-10px_rgba(0,0,0,0.1)]"
               >
-                <div className="mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-full bg-accent-pink/10 transition-all duration-500 group-hover:bg-accent-pink/20">
-                  <Icon className="h-10 w-10 text-accent-pink transition-colors duration-500" />
+                <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-accent-pink/10 transition-all duration-500 group-hover:bg-accent-pink/20">
+                  <Icon className="h-8 w-8 text-accent-pink transition-colors duration-500" />
                 </div>
                 <h3 className="mb-4 font-heading text-lg font-bold text-text-primary">
                   {item.title}

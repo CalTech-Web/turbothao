@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden bg-primary pt-[195px] pb-20 md:pb-28"
+      className="relative overflow-hidden bg-primary pt-[140px] pb-20 md:pb-28"
     >
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="grid items-center gap-12 lg:grid-cols-[55fr_45fr] lg:gap-16">

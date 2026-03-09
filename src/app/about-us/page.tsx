@@ -37,14 +37,14 @@ export default function AboutUsPage() {
           <h2 className="mt-4 font-heading text-3xl font-bold text-text-primary md:text-4xl">
             {BUSINESS_INFO.aboutTitle}
           </h2>
-          <p className="mt-8 text-base italic leading-relaxed text-text-secondary">
+          <p className="mt-6 text-base italic leading-relaxed text-text-secondary">
             At TurboThao Nails, we believe that true beauty goes beyond the surface. Our salon is dedicated to providing exceptional nail care, waxing, and spa services that cater to your individual needs. We use only premium products and stay current with the latest techniques to deliver results that exceed your expectations.
           </p>
           <p className="mt-6 text-base italic leading-relaxed text-text-secondary">
             {BUSINESS_INFO.aboutDescription}
           </p>
 
-          <div className="mt-12">
+          <div className="mt-10">
             <a
               href={BOOKING_URL}
               target="_blank"
@@ -66,7 +66,7 @@ export default function AboutUsPage() {
               What We Offer
             </h2>
           </div>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { title: "Nail Services", desc: "Nail art, acrylics, gel removal, and custom designs", href: "/nail-services" },
               { title: "Manicure & Pedicure", desc: "Classic and deluxe services, callus removal, polish changes", href: "/manicure-and-pedicure" },
@@ -98,7 +98,7 @@ export default function AboutUsPage() {
               We Use Only the Best
             </h2>
           </div>
-          <div className="mt-12 overflow-hidden">
+          <div className="mt-10 overflow-hidden">
             <div className="flex animate-marquee w-max">
               {[...BRANDS, ...BRANDS].map((brand, i) => (
                 <div key={`${brand.name}-${i}`} className="flex shrink-0 items-center justify-center" style={{ width: "calc(20vw)", maxWidth: "240px", minWidth: "160px" }}>

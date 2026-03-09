@@ -73,11 +73,11 @@ export default function OurServicesPage() {
       {/* Services Grid */}
       <section className="bg-white py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="space-y-12">
+          <div className="space-y-16">
             {services.map((service, index) => (
               <div
                 key={service.href}
-                className={`grid items-center gap-10 lg:grid-cols-2 ${index % 2 === 1 ? "lg:direction-rtl" : ""}`}
+                className={`grid items-center gap-8 lg:grid-cols-2 ${index % 2 === 1 ? "lg:direction-rtl" : ""}`}
               >
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                   <div className="overflow-hidden rounded-2xl shadow-[0_6px_15px_-10px_rgba(0,0,0,0.08)]">

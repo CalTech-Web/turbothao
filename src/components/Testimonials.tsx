@@ -4,7 +4,7 @@ import SectionHeading from "./SectionHeading";
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="bg-primary-soft py-28 md:py-36">
+    <section id="testimonials" className="bg-primary-soft py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           title="What Our Clients Say"
@@ -32,7 +32,7 @@ export default function Testimonials() {
                 ))}
               </div>
 
-              <p className="mb-8 text-base italic leading-relaxed text-text-secondary">
+              <p className="mb-6 text-base italic leading-relaxed text-text-secondary">
                 &ldquo;{testimonial.quote}&rdquo;
               </p>
 
