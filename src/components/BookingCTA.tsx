@@ -1,8 +1,20 @@
+import Image from "next/image";
 import { BOOKING_URL } from "@/lib/constants";
 
 export default function BookingCTA() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-accent-pink via-accent-pink to-accent-pink-dark py-20 md:py-28">
+      {/* Background image - left side with low opacity */}
+      <div className="absolute inset-y-0 left-0 w-1/2 md:w-2/5">
+        <Image
+          src="/images/cta-bg.webp"
+          alt=""
+          fill
+          className="object-cover opacity-15 mix-blend-luminosity"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent to-accent-pink" />
+      </div>
+
       {/* Decorative background elements */}
       <div className="absolute inset-0">
         <div className="absolute -top-20 -left-20 h-72 w-72 rounded-full bg-white/5 blur-3xl" />
