@@ -98,17 +98,19 @@ export default function AboutUsPage() {
               We Use Only the Best
             </h2>
           </div>
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-10">
-            {BRANDS.map((brand) => (
-              <Image
-                key={brand.name}
-                src={brand.image}
-                alt={brand.name}
-                width={120}
-                height={60}
-                className="h-12 w-auto grayscale opacity-70 transition-all hover:grayscale-0 hover:opacity-100"
-              />
-            ))}
+          <div className="mt-12 overflow-hidden">
+            <div className="flex animate-marquee w-max gap-16">
+              {[...BRANDS, ...BRANDS].map((brand, i) => (
+                <Image
+                  key={`${brand.name}-${i}`}
+                  src={brand.image}
+                  alt={brand.name}
+                  width={120}
+                  height={60}
+                  className="h-14 w-auto shrink-0 grayscale opacity-70 transition-all hover:grayscale-0 hover:opacity-100"
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>

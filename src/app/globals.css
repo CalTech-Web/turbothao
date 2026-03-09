@@ -110,6 +110,15 @@ body {
 .animate-expand-left { animation: expand-left 1.2s ease-out 0.5s forwards; width: 0; }
 .animate-btn-shimmer { animation: btn-shimmer 3s ease-in-out infinite; }
 
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
 .font-script {
   font-family: var(--font-script);
 }
