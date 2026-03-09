@@ -101,13 +101,13 @@ export default function AboutUsPage() {
           <div className="mt-12 overflow-hidden">
             <div className="flex animate-marquee w-max">
               {[...BRANDS, ...BRANDS].map((brand, i) => (
-                <div key={`${brand.name}-${i}`} className="flex shrink-0 items-center justify-center" style={{ width: "calc(25vw)", maxWidth: "300px", minWidth: "200px" }}>
+                <div key={`${brand.name}-${i}`} className="flex shrink-0 items-center justify-center" style={{ width: "calc(20vw)", maxWidth: "240px", minWidth: "160px" }}>
                   <Image
                     src={brand.image}
                     alt={brand.name}
                     width={200}
                     height={100}
-                    className="h-24 w-auto grayscale opacity-70 transition-all hover:grayscale-0 hover:opacity-100"
+                    className="h-24 w-auto"
                   />
                 </div>
               ))}
