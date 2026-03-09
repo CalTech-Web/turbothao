@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { NAV_LINKS, BUSINESS_INFO } from "@/lib/constants";
+import Link from "next/link";
+import { NAV_LINKS, BUSINESS_INFO, BOOKING_URL } from "@/lib/constants";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,9 +30,9 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#hero" className="transition-opacity hover:opacity-80">
+        <Link href="/" className="transition-opacity hover:opacity-80">
           <Image src="/logo.webp" alt={BUSINESS_INFO.name} width={180} height={60} className="h-16 w-auto animate-spin-slow" priority />
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <div className="hidden items-center gap-8 lg:flex">
@@ -43,40 +44,42 @@ export default function Navbar() {
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
               >
-                <button className="flex items-center gap-1 text-sm italic text-text-secondary transition-colors hover:text-accent-pink">
+                <Link href={link.href} className="flex items-center gap-1 text-sm italic text-text-secondary transition-colors hover:text-accent-pink">
                   {link.label}
                   <svg className="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><path d="M3 4.5L6 7.5L9 4.5" /></svg>
-                </button>
+                </Link>
                 {dropdownOpen && (
                   <div className="absolute top-full left-0 mt-3 w-56 rounded-xl bg-white border border-border py-2 shadow-[0_15px_25px_-7px_rgba(0,0,0,0.1)]">
                     {link.children.map((child) => (
-                      <a
+                      <Link
                         key={child.label}
                         href={child.href}
                         onClick={handleLinkClick}
                         className="block px-5 py-2.5 text-sm italic text-text-secondary transition-colors hover:text-accent-pink hover:bg-primary-soft"
                       >
                         {child.label}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}
               </div>
             ) : (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
                 className="text-sm italic text-text-secondary transition-colors hover:text-accent-pink"
               >
                 {link.label}
-              </a>
+              </Link>
             )
           )}
           <a
-            href="#contact"
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-accent-pink px-7 py-2.5 text-sm font-medium text-white shadow-[2px_2px_5px_0px_rgba(21,63,33,0.2)] transition-all duration-300 hover:bg-accent-pink-light hover:shadow-[0_15px_25px_-7px_rgba(0,0,0,0.1)]"
           >
-            Make A Reservation
+            Book Appointment
           </a>
         </div>
 
@@ -99,35 +102,37 @@ export default function Navbar() {
         <div className="border-t border-border bg-white px-6 py-8 lg:hidden">
           {NAV_LINKS.map((link) => (
             <div key={link.label}>
-              <a
+              <Link
                 href={link.href}
                 onClick={handleLinkClick}
                 className="block py-3 text-base italic text-text-secondary transition-colors hover:text-accent-pink"
               >
                 {link.label}
-              </a>
+              </Link>
               {link.children && (
                 <div className="ml-4 border-l-2 border-accent-pink/20">
                   {link.children.map((child) => (
-                    <a
+                    <Link
                       key={child.label}
                       href={child.href}
                       onClick={handleLinkClick}
                       className="block py-2 pl-4 text-sm italic text-text-muted transition-colors hover:text-accent-pink"
                     >
                       {child.label}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
             </div>
           ))}
           <a
-            href="#contact"
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={handleLinkClick}
             className="mt-6 block rounded-full bg-accent-pink py-3 text-center text-sm font-medium text-white"
           >
-            Make A Reservation
+            Book Appointment
           </a>
         </div>
       )}

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BUSINESS_INFO } from "@/lib/constants";
+import { BUSINESS_INFO, BOOKING_URL } from "@/lib/constants";
 
 export default function Hero() {
   return (
@@ -26,13 +26,15 @@ export default function Hero() {
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
-                href="#contact"
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block rounded-full bg-accent-pink px-10 py-4 text-center text-sm font-medium text-white shadow-[2px_2px_5px_0px_rgba(21,63,33,0.2)] transition-all duration-300 hover:bg-accent-pink-light hover:shadow-[0_15px_25px_-7px_rgba(0,0,0,0.1)]"
               >
                 Book Appointment
               </a>
               <a
-                href="#services"
+                href="/our-services"
                 className="inline-block rounded-full border-2 border-text-muted/30 px-10 py-4 text-center text-sm font-medium text-text-secondary transition-all duration-300 hover:border-accent-pink hover:text-accent-pink"
               >
                 Our Services

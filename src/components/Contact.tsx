@@ -1,4 +1,4 @@
-import { CONTACT_INFO } from "@/lib/constants";
+import { CONTACT_INFO, BOOKING_URL } from "@/lib/constants";
 import SectionHeading from "./SectionHeading";
 
 export default function Contact() {

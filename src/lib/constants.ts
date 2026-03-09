@@ -1,3 +1,6 @@
+export const BOOKING_URL =
+  "https://www.wellnessliving.com/rs/appointment-new/turbo_thaos_nails_and_spa?dtu_redirect=2026-03-08+23%3A17%3A46&id_class_tab=3&id_mode=1&k_class_tab=65557&s_id=k4HTA8";
+
 export const BUSINESS_INFO = {
   name: "TurboThao Nails and Spa",
   tagline: "TurboThao Nails!",
@@ -8,21 +11,30 @@ export const BUSINESS_INFO = {
   aboutSubtitle: "Where Style Meets Serenity",
   aboutDescription:
     "At TurboThao Nails and Spa, we blend artistry with relaxation to create a haven for beauty enthusiasts. Our mission is to offer top-tier nail care, waxing, and spa services that prioritize both your appearance and wellbeing.",
+  email: "thao@turbothao.com",
 };
 
 export const CONTACT_INFO = {
   address: "Suite 9, 5930 W Greenway Ave, Glendale, AZ 85306",
   phone: "(602) 441-3887",
   phoneLink: "tel:+16024413887",
+  email: "thao@turbothao.com",
   mapUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.7!2d-112.185!3d33.563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s5930+W+Greenway+Ave+Suite+9+Glendale+AZ+85306!5e0!3m2!1sen!2sus!4v1",
-  mapsLink:
-    "https://www.google.com/maps/search/?api=1&query=5930+W+Greenway+Ave+Suite+9+Glendale+AZ+85306",
+  mapsLink: "https://maps.app.goo.gl/DE1xRqVSevDDopmG7",
   hours: [
     { days: "Monday - Friday", time: "9:00 AM - 7:00 PM" },
     { days: "Saturday", time: "9:00 AM - 7:00 PM" },
     { days: "Sunday", time: "Closed" },
   ],
+  social: {
+    facebook: "#",
+    instagram: "#",
+  },
+  appLinks: {
+    ios: "https://apps.apple.com/us/app/turbo-thaos-nails-and-spa/id6740285401",
+    android: "https://play.google.com/store/apps/details?id=turbo.thaos.nails.and.spa",
+  },
 };
 
 export const EXPERTISE = [
@@ -148,44 +160,54 @@ export const TESTIMONIALS = [
     quote:
       "If you're in search of excellent service and long-lasting nails, Thao Nails is the perfect spot. I've been loyal to Cici since before she opened her salon. She goes above and beyond every single time.",
     rating: 5,
+    avatar: "/images/reviews/julie-g.webp",
   },
   {
     name: "Mamie M.",
     quote:
       "My nails sparkle like diamond dust — it's such a glamorous look! The vibrant color selection is incredible, and Vi always provides exceptional service. I wouldn't go anywhere else.",
     rating: 5,
+    avatar: "/images/reviews/mamie-m.webp",
   },
   {
     name: "Susan M.",
     quote:
       "Amazing place with convenient hours. I never feel rushed, and they always accommodate me even for urgent requests. Been a client here forever and wouldn't dream of going elsewhere.",
     rating: 5,
+    avatar: "/images/reviews/susan-m.webp",
   },
 ];
 
 export const NAV_LINKS = [
-  { label: "Home", href: "#hero" },
-  { label: "About Us", href: "#about" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about-us" },
   {
     label: "Our Services",
-    href: "#services",
+    href: "/our-services",
     children: [
-      { label: "Nail Services", href: "#nail-services" },
-      { label: "Manicure & Pedicure", href: "#manicure-pedicure" },
-      { label: "Eyelash & Eyebrow", href: "#eyelash-eyebrow" },
-      { label: "Waxing Services", href: "#waxing" },
-      { label: "Spa Enhancements", href: "#spa-enhancements" },
+      { label: "Nail Services", href: "/nail-services" },
+      { label: "Manicure & Pedicure", href: "/manicure-and-pedicure" },
+      { label: "Eyelash & Eyebrow", href: "/eyelash-and-eyebrow-services" },
+      { label: "Waxing Services", href: "/waxing-services" },
+      { label: "Spa Enhancements", href: "/spa-enhancements" },
     ],
   },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Contact Us", href: "/contact-us" },
 ];
 
 export const FOOTER_LINKS = [
-  { label: "Nail Art", href: "#nail-services" },
-  { label: "Acrylic Full Set", href: "#nail-services" },
-  { label: "Callus Removal", href: "#manicure-pedicure" },
-  { label: "Classic Pedicure", href: "#manicure-pedicure" },
-  { label: "Acrylic Fill-In", href: "#nail-services" },
-  { label: "View All Services", href: "#services" },
+  { label: "Nail Services", href: "/nail-services" },
+  { label: "Manicure & Pedicure", href: "/manicure-and-pedicure" },
+  { label: "Eyelash & Eyebrow", href: "/eyelash-and-eyebrow-services" },
+  { label: "Waxing Services", href: "/waxing-services" },
+  { label: "Spa Enhancements", href: "/spa-enhancements" },
+  { label: "View All Services", href: "/our-services" },
+];
+
+export const BRANDS = [
+  { name: "Essie", image: "/images/brands/essie.jpg" },
+  { name: "Elemis", image: "/images/brands/elemis.jpg" },
+  { name: "Gigi", image: "/images/brands/gigi.jpg" },
+  { name: "Kerastase", image: "/images/brands/kerastase.jpg" },
+  { name: "Lycon", image: "/images/brands/lycon.jpg" },
 ];
