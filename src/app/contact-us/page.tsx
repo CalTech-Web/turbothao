@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CONTACT_INFO, BOOKING_URL } from "@/lib/constants";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
   title: "Contact Us | TurboThao Nails and Spa",
@@ -97,18 +98,21 @@ export default function ContactUsPage() {
               </div>
             </div>
 
-            {/* Map */}
-            <div className="overflow-hidden rounded-2xl shadow-[0_6px_15px_-10px_rgba(0,0,0,0.08)]">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.7!2d-112.185!3d33.563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s5930+W+Greenway+Ave+Suite+9+Glendale+AZ+85306!5e0!3m2!1sen!2sus!4v1"
-                width="100%"
-                height="100%"
-                style={{ border: 0, minHeight: "600px" }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="TurboThao Nails and Spa Location"
-              />
+            {/* Contact Form + Map */}
+            <div className="space-y-8">
+              <ContactForm />
+              <div className="overflow-hidden rounded-2xl shadow-[0_6px_15px_-10px_rgba(0,0,0,0.08)]">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.7!2d-112.185!3d33.563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s5930+W+Greenway+Ave+Suite+9+Glendale+AZ+85306!5e0!3m2!1sen!2sus!4v1"
+                  width="100%"
+                  height="350"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="TurboThao Nails and Spa Location"
+                />
+              </div>
             </div>
           </div>
         </div>
