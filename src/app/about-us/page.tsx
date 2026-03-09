@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { BUSINESS_INFO, BRANDS, BOOKING_URL } from "@/lib/constants";
+import { BUSINESS_INFO, BRANDS } from "@/lib/constants";
 
 export const metadata = {
   title: "About Us | TurboThao Nails and Spa",
@@ -43,19 +43,6 @@ export default function AboutUsPage() {
           <p className="mt-6 text-base italic leading-relaxed text-text-secondary">
             {BUSINESS_INFO.aboutDescription}
           </p>
-
-          <div className="mx-auto mt-10 max-w-md rounded-2xl bg-accent-pink px-8 py-10">
-            <h3 className="font-heading text-2xl font-bold text-white">Ready to Book?</h3>
-            <p className="mt-3 text-base italic text-white/80">Schedule your appointment today</p>
-            <a
-              href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-block rounded-full bg-white px-10 py-3.5 text-base font-semibold text-accent-pink shadow-[0_4px_15px_rgba(0,0,0,0.1)] transition-all hover:bg-primary-soft hover:shadow-[0_6px_20px_rgba(0,0,0,0.15)]"
-            >
-              Book Now
-            </a>
-          </div>
         </div>
       </section>
 

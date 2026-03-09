@@ -89,20 +89,6 @@ export default function ServicePageLayout({
                 ))}
               </ul>
 
-              <div className="mt-10 rounded-2xl bg-accent-pink px-8 py-10 text-center">
-                <h3 className="font-heading text-2xl font-bold text-white">Ready to Book?</h3>
-                <p className="mt-3 text-base italic text-white/80">
-                  Schedule your appointment today
-                </p>
-                <a
-                  href={BOOKING_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 inline-block rounded-full bg-white px-10 py-3.5 text-base font-semibold text-accent-pink shadow-[0_4px_15px_rgba(0,0,0,0.1)] transition-all hover:bg-primary-soft hover:shadow-[0_6px_20px_rgba(0,0,0,0.15)]"
-                >
-                  Book Now
-                </a>
-              </div>
             </div>
 
             {/* Sidebar */}
@@ -128,20 +114,6 @@ export default function ServicePageLayout({
                 </ul>
               </div>
 
-              <div className="mt-8 rounded-2xl bg-accent-pink px-8 py-10 text-center text-white">
-                <h3 className="font-heading text-2xl font-bold">Ready to Book?</h3>
-                <p className="mt-3 text-base italic text-white/80">
-                  Schedule your appointment today
-                </p>
-                <a
-                  href={BOOKING_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 inline-block rounded-full bg-white px-10 py-3.5 text-base font-semibold text-accent-pink shadow-[0_4px_15px_rgba(0,0,0,0.1)] transition-all hover:bg-primary-soft hover:shadow-[0_6px_20px_rgba(0,0,0,0.15)]"
-                >
-                  Book Now
-                </a>
-              </div>
             </div>
           </div>
         </div>
