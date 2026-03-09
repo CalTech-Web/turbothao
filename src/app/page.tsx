@@ -3,7 +3,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import ServiceDetails from "@/components/ServiceDetails";
 import Testimonials from "@/components/Testimonials";
-import AppPromo from "@/components/AppPromo";
+
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -14,7 +14,6 @@ export default function Home() {
       <Services />
       <ServiceDetails />
       <Testimonials />
-      <AppPromo />
       <Contact />
     </>
   );

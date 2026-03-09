@@ -31,7 +31,7 @@ export default function ServicePageLayout({
   return (
     <>
       {/* Hero Banner */}
-      <section className="relative h-[350px] md:h-[450px] overflow-hidden">
+      <section className="relative h-[350px] md:h-[450px] overflow-hidden pt-[80px]">
         <Image
           src={heroImage}
           alt={title}

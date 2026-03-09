@@ -49,7 +49,7 @@ export default function OurServicesPage() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="relative h-[350px] md:h-[450px] overflow-hidden">
+      <section className="relative h-[350px] md:h-[450px] overflow-hidden pt-[80px]">
         <Image
           src="/images/heroes/our-services.jpg"
           alt="Our Services"
