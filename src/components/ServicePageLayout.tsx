@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BOOKING_URL } from "@/lib/constants";
+import BookingCTA from "@/components/BookingCTA";
 
 interface ServicePageLayoutProps {
   title: string;
@@ -118,6 +119,8 @@ export default function ServicePageLayout({
           </div>
         </div>
       </section>
+
+      <BookingCTA />
     </>
   );
 }

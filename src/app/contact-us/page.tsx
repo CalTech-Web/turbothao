@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { CONTACT_INFO } from "@/lib/constants";
 import ContactForm from "@/components/ContactForm";
+import BookingCTA from "@/components/BookingCTA";
 
 export const metadata = {
   title: "Contact Us | TurboThao Nails and Spa",
@@ -104,6 +105,8 @@ export default function ContactUsPage() {
           </div>
         </div>
       </section>
+
+      <BookingCTA />
     </>
   );
 }

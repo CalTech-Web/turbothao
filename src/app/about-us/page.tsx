@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BUSINESS_INFO, BRANDS } from "@/lib/constants";
+import BookingCTA from "@/components/BookingCTA";
 
 export const metadata = {
   title: "About Us | TurboThao Nails and Spa",
@@ -16,7 +17,7 @@ export default function AboutUsPage() {
           src="/images/heroes/about-us.jpg"
           alt="About TurboThao Nails and Spa"
           fill
-          className="object-cover"
+          className="object-cover object-bottom"
           priority
         />
         <div className="absolute inset-0 bg-black/50" />
@@ -104,6 +105,8 @@ export default function AboutUsPage() {
           </div>
         </div>
       </section>
+
+      <BookingCTA />
     </>
   );
 }

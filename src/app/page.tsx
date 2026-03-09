@@ -5,6 +5,7 @@ import ServiceDetails from "@/components/ServiceDetails";
 import Testimonials from "@/components/Testimonials";
 
 import Contact from "@/components/Contact";
+import BookingCTA from "@/components/BookingCTA";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <ServiceDetails />
       <Testimonials />
+      <BookingCTA />
       <Contact />
     </>
   );

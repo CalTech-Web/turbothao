@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BOOKING_URL } from "@/lib/constants";
+import BookingCTA from "@/components/BookingCTA";
 
 export const metadata = {
   title: "Our Services | TurboThao Nails and Spa",
@@ -122,6 +123,8 @@ export default function OurServicesPage() {
           </div>
         </div>
       </section>
+
+      <BookingCTA />
     </>
   );
 }
