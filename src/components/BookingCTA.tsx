@@ -3,24 +3,16 @@ import { BOOKING_URL } from "@/lib/constants";
 
 export default function BookingCTA() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-accent-pink via-accent-pink to-accent-pink-dark py-20 md:py-28">
-      {/* Background image - left side */}
-      <div className="absolute inset-y-0 left-0 w-2/3 md:w-1/2">
-        <Image
-          src="/images/cta-bg.webp"
-          alt=""
-          fill
-          className="object-cover opacity-30 mix-blend-soft-light"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-accent-pink/20 via-accent-pink/60 to-accent-pink" />
-      </div>
-
-      {/* Decorative background elements */}
-      <div className="absolute inset-0">
-        <div className="absolute -top-20 -left-20 h-72 w-72 rounded-full bg-white/5 blur-3xl" />
-        <div className="absolute -right-20 -bottom-20 h-96 w-96 rounded-full bg-white/5 blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/5 blur-2xl" />
-      </div>
+    <section className="relative overflow-hidden py-20 md:py-28">
+      {/* Full background image */}
+      <Image
+        src="/images/cta-bg.webp"
+        alt=""
+        fill
+        className="object-cover"
+      />
+      {/* Pink overlay */}
+      <div className="absolute inset-0 bg-accent-pink/80" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
         {/* Script decorative text */}
