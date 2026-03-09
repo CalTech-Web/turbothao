@@ -100,10 +100,10 @@ export default function OurServicesPage() {
                   <p className="text-base italic leading-relaxed text-text-secondary">
                     {service.description}
                   </p>
-                  <div className="mt-6 flex gap-4">
+                  <div className="mt-6 flex flex-wrap gap-4">
                     <Link
                       href={service.href}
-                      className="inline-block rounded-full border-2 border-accent-pink px-8 py-3 text-sm font-medium text-accent-pink transition-all hover:bg-accent-pink hover:text-white"
+                      className="inline-block rounded-full border-2 border-accent-pink px-8 py-3 text-sm font-semibold text-accent-pink transition-all hover:bg-accent-pink hover:text-white"
                     >
                       Learn More
                     </Link>
@@ -111,7 +111,7 @@ export default function OurServicesPage() {
                       href={BOOKING_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block rounded-full bg-accent-pink px-8 py-3 text-sm font-medium text-white transition-all hover:bg-accent-pink-light"
+                      className="inline-block rounded-full bg-accent-pink px-8 py-3 text-sm font-semibold text-white shadow-[0_4px_15px_rgba(242,4,115,0.3)] transition-all hover:bg-accent-pink-light hover:shadow-[0_6px_20px_rgba(242,4,115,0.4)]"
                     >
                       Book Now
                     </a>

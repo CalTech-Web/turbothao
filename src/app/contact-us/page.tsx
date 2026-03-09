@@ -84,14 +84,14 @@ export default function ContactUsPage() {
                 </div>
               </div>
 
-              <div className="rounded-2xl bg-accent-pink p-8 text-center text-white">
-                <h3 className="font-heading text-xl font-bold">Book Your Visit</h3>
-                <p className="mt-2 text-sm italic text-white/80">Schedule your appointment online</p>
+              <div className="rounded-2xl bg-accent-pink px-8 py-10 text-center text-white">
+                <h3 className="font-heading text-2xl font-bold">Ready to Book?</h3>
+                <p className="mt-3 text-base italic text-white/80">Schedule your appointment today</p>
                 <a
                   href={BOOKING_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 inline-block rounded-full bg-white px-8 py-3 text-sm font-medium text-accent-pink transition-all hover:bg-primary-soft"
+                  className="mt-6 inline-block rounded-full bg-white px-10 py-3.5 text-base font-semibold text-accent-pink shadow-[0_4px_15px_rgba(0,0,0,0.1)] transition-all hover:bg-primary-soft hover:shadow-[0_6px_20px_rgba(0,0,0,0.15)]"
                 >
                   Book Now
                 </a>

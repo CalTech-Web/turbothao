@@ -29,13 +29,13 @@ export default function Hero() {
                 href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-full bg-accent-pink px-10 py-4 text-center text-sm font-medium text-white shadow-[2px_2px_5px_0px_rgba(21,63,33,0.2)] transition-all duration-300 hover:bg-accent-pink-light hover:shadow-[0_15px_25px_-7px_rgba(0,0,0,0.1)]"
+                className="inline-block rounded-full bg-accent-pink px-10 py-4 text-center text-base font-semibold text-white shadow-[0_4px_15px_rgba(242,4,115,0.3)] transition-all duration-300 hover:bg-accent-pink-light hover:shadow-[0_6px_20px_rgba(242,4,115,0.4)]"
               >
                 Book Appointment
               </a>
               <a
                 href="/our-services"
-                className="inline-block rounded-full border-2 border-text-muted/30 px-10 py-4 text-center text-sm font-medium text-text-secondary transition-all duration-300 hover:border-accent-pink hover:text-accent-pink"
+                className="inline-block rounded-full border-2 border-accent-pink/30 px-10 py-4 text-center text-base font-semibold text-text-secondary transition-all duration-300 hover:border-accent-pink hover:text-accent-pink"
               >
                 Our Services
               </a>

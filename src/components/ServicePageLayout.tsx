@@ -89,14 +89,18 @@ export default function ServicePageLayout({
                 ))}
               </ul>
 
-              <div className="mt-10">
+              <div className="mt-10 rounded-2xl bg-accent-pink px-8 py-10 text-center">
+                <h3 className="font-heading text-2xl font-bold text-white">Ready to Book?</h3>
+                <p className="mt-3 text-base italic text-white/80">
+                  Schedule your appointment today
+                </p>
                 <a
                   href={BOOKING_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block rounded-full bg-accent-pink px-10 py-4 text-sm font-medium text-white shadow-[2px_2px_5px_0px_rgba(21,63,33,0.2)] transition-all duration-300 hover:bg-accent-pink-light"
+                  className="mt-6 inline-block rounded-full bg-white px-10 py-3.5 text-base font-semibold text-accent-pink shadow-[0_4px_15px_rgba(0,0,0,0.1)] transition-all hover:bg-primary-soft hover:shadow-[0_6px_20px_rgba(0,0,0,0.15)]"
                 >
-                  Book This Service
+                  Book Now
                 </a>
               </div>
             </div>
@@ -124,16 +128,16 @@ export default function ServicePageLayout({
                 </ul>
               </div>
 
-              <div className="mt-8 rounded-2xl bg-accent-pink p-6 text-center text-white">
-                <h3 className="font-heading text-lg font-bold">Ready to Book?</h3>
-                <p className="mt-2 text-sm italic text-white/80">
+              <div className="mt-8 rounded-2xl bg-accent-pink px-8 py-10 text-center text-white">
+                <h3 className="font-heading text-2xl font-bold">Ready to Book?</h3>
+                <p className="mt-3 text-base italic text-white/80">
                   Schedule your appointment today
                 </p>
                 <a
                   href={BOOKING_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 inline-block rounded-full bg-white px-8 py-3 text-sm font-medium text-accent-pink transition-all hover:bg-primary-soft"
+                  className="mt-6 inline-block rounded-full bg-white px-10 py-3.5 text-base font-semibold text-accent-pink shadow-[0_4px_15px_rgba(0,0,0,0.1)] transition-all hover:bg-primary-soft hover:shadow-[0_6px_20px_rgba(0,0,0,0.15)]"
                 >
                   Book Now
                 </a>
