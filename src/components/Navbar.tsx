@@ -56,6 +56,7 @@ export default function Navbar() {
               >
                 <button
                   onClick={() => setDropdownOpen(!dropdownOpen)}
+                  aria-expanded={dropdownOpen}
                   className="flex items-center gap-1 text-sm italic text-text-secondary transition-colors hover:text-accent-pink"
                 >
                   {link.label}
