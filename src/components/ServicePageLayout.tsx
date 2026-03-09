@@ -38,6 +38,7 @@ export default function ServicePageLayout({
           alt={title}
           fill
           className="object-cover"
+          sizes="100vw"
           priority
         />
         <div className="absolute inset-0 bg-black/50" />
@@ -54,7 +55,7 @@ export default function ServicePageLayout({
       {/* Content */}
       <section className="bg-white py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="grid gap-12 lg:grid-cols-[2fr_1fr]">
+          <div className="grid gap-8 lg:gap-12 lg:grid-cols-[2fr_1fr]">
             {/* Main Content */}
             <div>
               <p className="text-base italic leading-relaxed text-text-secondary">

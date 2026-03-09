@@ -14,7 +14,8 @@ export default function BookingCTA() {
                 alt="Nail art at TurboThao Nails and Spa"
                 width={600}
                 height={500}
-                className="h-[350px] w-full object-cover md:h-[420px]"
+                className="h-[280px] w-full object-cover sm:h-[350px] md:h-[420px]"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
             {/* Decorative accent */}
@@ -23,13 +24,13 @@ export default function BookingCTA() {
 
           {/* Right - Content */}
           <div>
-            <p className="font-script text-5xl text-accent-pink md:text-6xl">
+            <p className="font-script text-4xl text-accent-pink sm:text-5xl md:text-6xl">
               Treat Yourself
             </p>
             <p className="mt-1 text-sm font-semibold tracking-[0.15em] uppercase text-accent-pink/60">
               Book Your Appointment Today
             </p>
-            <h2 className="mt-4 font-heading text-3xl font-bold text-text-primary md:text-4xl">
+            <h2 className="mt-4 font-heading text-2xl font-bold text-text-primary sm:text-3xl md:text-4xl">
               Ready for Your Next Pampering Session?
             </h2>
             <div className="mt-5 flex items-center gap-4">
@@ -47,13 +48,13 @@ export default function BookingCTA() {
                 href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-full bg-accent-pink px-10 py-4 text-center text-base font-semibold text-white shadow-[0_4px_15px_rgba(242,4,115,0.3)] transition-all duration-300 hover:bg-accent-pink-light hover:shadow-[0_6px_20px_rgba(242,4,115,0.4)]"
+                className="inline-block rounded-full bg-accent-pink px-7 py-3 text-center text-base font-semibold text-white shadow-[0_4px_15px_rgba(242,4,115,0.3)] transition-all duration-300 hover:bg-accent-pink-light hover:shadow-[0_6px_20px_rgba(242,4,115,0.4)] sm:px-10 sm:py-4"
               >
                 Book Appointment
               </a>
               <a
                 href="/our-services"
-                className="inline-block rounded-full border-2 border-accent-pink/30 px-10 py-4 text-center text-base font-semibold text-text-secondary transition-all duration-300 hover:border-accent-pink hover:text-accent-pink"
+                className="inline-block rounded-full border-2 border-accent-pink/30 px-7 py-3 text-center text-base font-semibold text-text-secondary transition-all duration-300 hover:border-accent-pink hover:text-accent-pink sm:px-10 sm:py-4"
               >
                 Our Services
               </a>

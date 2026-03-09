@@ -14,7 +14,7 @@ export default function Hero() {
             <p className="mb-2 text-sm italic tracking-wide text-text-muted">
               welcome to
             </p>
-            <h1 className="font-script text-[70px] leading-[0.9] text-accent-pink sm:text-[90px] md:text-[110px] lg:text-[128px]">
+            <h1 className="font-script text-[55px] leading-[0.9] text-accent-pink sm:text-[90px] md:text-[110px] lg:text-[128px]">
               {BUSINESS_INFO.tagline}
             </h1>
             <p className="mt-6 text-lg italic leading-relaxed text-text-secondary md:text-xl">
@@ -29,13 +29,13 @@ export default function Hero() {
                 href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-full bg-accent-pink px-10 py-4 text-center text-base font-semibold text-white shadow-[0_4px_15px_rgba(242,4,115,0.3)] transition-all duration-300 hover:bg-accent-pink-light hover:shadow-[0_6px_20px_rgba(242,4,115,0.4)]"
+                className="inline-block rounded-full bg-accent-pink px-7 py-3 text-center text-base font-semibold text-white shadow-[0_4px_15px_rgba(242,4,115,0.3)] transition-all duration-300 hover:bg-accent-pink-light hover:shadow-[0_6px_20px_rgba(242,4,115,0.4)] sm:px-10 sm:py-4"
               >
                 Book Appointment
               </a>
               <a
                 href="/our-services"
-                className="inline-block rounded-full border-2 border-accent-pink/30 px-10 py-4 text-center text-base font-semibold text-text-secondary transition-all duration-300 hover:border-accent-pink hover:text-accent-pink"
+                className="inline-block rounded-full border-2 border-accent-pink/30 px-7 py-3 text-center text-base font-semibold text-text-secondary transition-all duration-300 hover:border-accent-pink hover:text-accent-pink sm:px-10 sm:py-4"
               >
                 Our Services
               </a>
@@ -50,7 +50,8 @@ export default function Hero() {
                 alt="Nail spa services"
                 width={600}
                 height={700}
-                className="h-[400px] w-full object-cover md:h-[550px]"
+                className="h-[350px] w-full object-cover md:h-[550px]"
+                sizes="(max-width: 1024px) 100vw, 45vw"
                 priority
               />
             </div>
