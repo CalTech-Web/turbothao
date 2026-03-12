@@ -42,7 +42,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="transition-opacity hover:opacity-80">
-          <Image src="/logo.webp" alt={BUSINESS_INFO.name} width={180} height={60} className="h-16 w-auto animate-spin-slow" priority sizes="64px" fetchPriority="high" />
+          <Image src="/logo.webp" alt={BUSINESS_INFO.name} width={180} height={60} className="h-16 w-auto animate-spin-slow" priority />
         </Link>
 
         {/* Desktop Nav */}
