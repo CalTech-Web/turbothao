@@ -6,6 +6,9 @@ import BookingCTA from "@/components/BookingCTA";
 export const metadata = {
   title: "Contact Us | TurboThao Nails and Spa",
   description: "Get in touch with TurboThao Nails and Spa in Glendale, AZ.",
+  alternates: {
+    canonical: "https://turbothao.vercel.app/contact-us",
+  },
 };
 
 export default function ContactUsPage() {

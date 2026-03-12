@@ -3,6 +3,9 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 export const metadata = {
   title: "Manicure & Pedicure | TurboThao Nails and Spa",
   description: "Professional manicure and pedicure services emphasizing nail health and skin nourishment in Glendale, AZ.",
+  alternates: {
+    canonical: "https://turbothao.vercel.app/manicure-and-pedicure",
+  },
 };
 
 export default function ManicurePedicurePage() {

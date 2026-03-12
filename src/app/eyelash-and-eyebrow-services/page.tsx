@@ -3,6 +3,9 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 export const metadata = {
   title: "Eyelash & Eyebrow Services | TurboThao Nails and Spa",
   description: "Expert eyelash extensions, lifts, tinting, and eyebrow services in Glendale, AZ.",
+  alternates: {
+    canonical: "https://turbothao.vercel.app/eyelash-and-eyebrow-services",
+  },
 };
 
 export default function EyelashEyebrowPage() {

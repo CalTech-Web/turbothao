@@ -3,6 +3,9 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 export const metadata = {
   title: "Waxing Services | TurboThao Nails and Spa",
   description: "Smooth, flawless skin with professional waxing services for men and women in Glendale, AZ.",
+  alternates: {
+    canonical: "https://turbothao.vercel.app/waxing-services",
+  },
 };
 
 export default function WaxingServicesPage() {

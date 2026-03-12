@@ -3,6 +3,9 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 export const metadata = {
   title: "Nail Services | TurboThao Nails and Spa",
   description: "Professional nail care from basic to advanced enhancements in Glendale, AZ.",
+  alternates: {
+    canonical: "https://turbothao.vercel.app/nail-services",
+  },
 };
 
 export default function NailServicesPage() {

@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     "nail art Glendale",
     "spa Glendale AZ",
   ],
+  alternates: {
+    canonical: "https://turbothao.vercel.app",
+  },
   icons: {
     icon: "/favicon.png",
   },

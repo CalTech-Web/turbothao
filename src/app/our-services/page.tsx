@@ -6,6 +6,9 @@ import BookingCTA from "@/components/BookingCTA";
 export const metadata = {
   title: "Our Services | TurboThao Nails and Spa",
   description: "Explore our full range of nail care, waxing, eyelash, and spa services in Glendale, AZ.",
+  alternates: {
+    canonical: "https://turbothao.vercel.app/our-services",
+  },
 };
 
 const services = [
