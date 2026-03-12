@@ -33,7 +33,7 @@ export default function Testimonials() {
 
         <div className="grid gap-8 md:grid-cols-3">
           {TESTIMONIALS.map((testimonial) => (
-            <div
+            <article
               key={testimonial.name}
               className="group rounded-2xl bg-white p-8 shadow-[0_6px_15px_-10px_rgba(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_25px_-10px_rgba(242,4,115,0.08)]"
             >
@@ -75,7 +75,7 @@ export default function Testimonials() {
                   <p className="text-xs italic text-text-muted">Verified Client</p>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

@@ -54,7 +54,7 @@ export default function About() {
           {EXPERTISE.map((item) => {
             const Icon = iconMap[item.icon];
             return (
-              <div
+              <article
                 key={item.title}
                 className="group rounded-2xl bg-white p-8 text-center shadow-[0_6px_15px_-10px_rgba(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_25px_-10px_rgba(0,0,0,0.1)]"
               >
@@ -67,7 +67,7 @@ export default function About() {
                 <p className="text-sm italic leading-relaxed text-text-muted">
                   {item.description}
                 </p>
-              </div>
+              </article>
             );
           })}
         </div>

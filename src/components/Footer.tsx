@@ -19,7 +19,7 @@ export default function Footer() {
               </p>
             </div>
 
-            <div>
+            <nav aria-label="Footer navigation">
               <h4 className="mb-4 font-heading text-base font-bold text-text-primary">
                 Quick Links
               </h4>
@@ -35,7 +35,7 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </nav>
 
             <div>
               <h4 className="mb-4 font-heading text-base font-bold text-text-primary">

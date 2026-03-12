@@ -92,7 +92,7 @@ export default function OurServicesPage() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="space-y-16">
             {services.map((service, index) => (
-              <div
+              <article
                 key={service.href}
                 className={`grid items-center gap-8 lg:grid-cols-2 ${index % 2 === 1 ? "lg:direction-rtl" : ""}`}
               >
@@ -134,7 +134,7 @@ export default function OurServicesPage() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>

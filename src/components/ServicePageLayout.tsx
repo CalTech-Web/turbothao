@@ -57,7 +57,7 @@ export default function ServicePageLayout({
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-8 lg:gap-12 lg:grid-cols-[2fr_1fr]">
             {/* Main Content */}
-            <div>
+            <article>
               <p className="text-base italic leading-relaxed text-text-secondary">
                 {description}
               </p>
@@ -91,10 +91,10 @@ export default function ServicePageLayout({
                 ))}
               </ul>
 
-            </div>
+            </article>
 
             {/* Sidebar */}
-            <div>
+            <aside>
               <div className="rounded-2xl bg-primary-soft p-6">
                 <h3 className="mb-4 font-heading text-lg font-bold text-text-primary">
                   Our Services
@@ -116,7 +116,7 @@ export default function ServicePageLayout({
                 </ul>
               </div>
 
-            </div>
+            </aside>
           </div>
         </div>
       </section>

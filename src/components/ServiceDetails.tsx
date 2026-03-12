@@ -21,7 +21,7 @@ export default function ServiceDetails() {
 
         <div className="space-y-8">
           {SERVICE_DETAILS.map((category) => (
-            <div
+            <article
               key={category.id}
               id={category.id}
               className="rounded-2xl bg-primary-soft p-8 shadow-[0_6px_15px_-10px_rgba(0,0,0,0.06)] md:p-10"
@@ -48,7 +48,7 @@ export default function ServiceDetails() {
                   </div>
                 ))}
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
