@@ -21,9 +21,9 @@ const mrsSaintDelafield = Mrs_Saint_Delafield({
 });
 
 export const metadata: Metadata = {
-  title: "TurboThao Nails and Spa | Nail Care, Waxing & Eyelash Extensions in Glendale AZ",
+  title: "Nail Salon Glendale AZ | TurboThao Nails & Spa",
   description:
-    "Experience where beauty meets precision and relaxation at TurboThao Nails and Spa in Glendale, AZ. Expert nail artistry, waxing, eyelash extensions, manicures, pedicures, and spa treatments.",
+    "Premier nail salon in Glendale, AZ offering nail art, acrylics, waxing, eyelash extensions & spa treatments. Book your appointment today!",
   keywords: [
     "nail salon Glendale AZ",
     "waxing Glendale",
@@ -37,8 +37,9 @@ export const metadata: Metadata = {
     icon: "/favicon.png",
   },
   openGraph: {
-    title: "TurboThao Nails and Spa",
-    description: "Nail care, waxing, and eyelash extensions in Glendale AZ.",
+    title: "TurboThao Nails & Spa | Glendale, AZ",
+    description:
+      "Premier nail salon in Glendale, AZ offering nail art, acrylics, waxing, eyelash extensions & spa treatments.",
     url: "https://turbothao.vercel.app",
     siteName: "TurboThao Nails and Spa",
     locale: "en_US",
