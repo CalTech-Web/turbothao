@@ -6,6 +6,18 @@ export const metadata = {
   alternates: {
     canonical: "https://turbothao.vercel.app/waxing-services",
   },
+  openGraph: {
+    title: "Waxing Services | TurboThao Nails and Spa",
+    description: "Smooth, flawless skin with professional waxing services for men and women in Glendale, AZ.",
+    url: "https://turbothao.vercel.app/waxing-services",
+    images: [{ url: "https://turbothao.vercel.app/images/heroes/waxing.jpg", alt: "Waxing Services at TurboThao Nails and Spa" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Waxing Services | TurboThao Nails and Spa",
+    description: "Smooth, flawless skin with professional waxing services for men and women in Glendale, AZ.",
+    images: ["https://turbothao.vercel.app/images/heroes/waxing.jpg"],
+  },
 };
 
 export default function WaxingServicesPage() {

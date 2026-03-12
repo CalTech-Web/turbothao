@@ -6,6 +6,18 @@ export const metadata = {
   alternates: {
     canonical: "https://turbothao.vercel.app/manicure-and-pedicure",
   },
+  openGraph: {
+    title: "Manicure & Pedicure | TurboThao Nails and Spa",
+    description: "Professional manicure and pedicure services in Glendale, AZ. Nail health, skin nourishment & relaxation.",
+    url: "https://turbothao.vercel.app/manicure-and-pedicure",
+    images: [{ url: "https://turbothao.vercel.app/images/heroes/manicure-pedicure.jpg", alt: "Manicure & Pedicure at TurboThao Nails and Spa" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Manicure & Pedicure | TurboThao Nails and Spa",
+    description: "Professional manicure and pedicure services in Glendale, AZ. Nail health, skin nourishment & relaxation.",
+    images: ["https://turbothao.vercel.app/images/heroes/manicure-pedicure.jpg"],
+  },
 };
 
 export default function ManicurePedicurePage() {

@@ -6,6 +6,18 @@ export const metadata = {
   alternates: {
     canonical: "https://turbothao.vercel.app/eyelash-and-eyebrow-services",
   },
+  openGraph: {
+    title: "Eyelash & Eyebrow Services | TurboThao Nails and Spa",
+    description: "Expert eyelash extensions, lifts, tinting, and eyebrow services in Glendale, AZ.",
+    url: "https://turbothao.vercel.app/eyelash-and-eyebrow-services",
+    images: [{ url: "https://turbothao.vercel.app/images/heroes/eyelash-eyebrow.jpg", alt: "Eyelash & Eyebrow Services at TurboThao" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Eyelash & Eyebrow Services | TurboThao Nails and Spa",
+    description: "Expert eyelash extensions, lifts, tinting, and eyebrow services in Glendale, AZ.",
+    images: ["https://turbothao.vercel.app/images/heroes/eyelash-eyebrow.jpg"],
+  },
 };
 
 export default function EyelashEyebrowPage() {

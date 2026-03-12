@@ -9,6 +9,18 @@ export const metadata = {
   alternates: {
     canonical: "https://turbothao.vercel.app/about-us",
   },
+  openGraph: {
+    title: "About Us | TurboThao Nails and Spa",
+    description: "Learn about TurboThao Nails and Spa - your premier nail salon in Glendale, AZ.",
+    url: "https://turbothao.vercel.app/about-us",
+    images: [{ url: "https://turbothao.vercel.app/images/heroes/about-us.jpg", alt: "About TurboThao Nails and Spa" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | TurboThao Nails and Spa",
+    description: "Learn about TurboThao Nails and Spa - your premier nail salon in Glendale, AZ.",
+    images: ["https://turbothao.vercel.app/images/heroes/about-us.jpg"],
+  },
 };
 
 export default function AboutUsPage() {

@@ -9,6 +9,18 @@ export const metadata = {
   alternates: {
     canonical: "https://turbothao.vercel.app/our-services",
   },
+  openGraph: {
+    title: "Our Services | TurboThao Nails and Spa",
+    description: "Explore our full range of nail care, waxing, eyelash, and spa services in Glendale, AZ.",
+    url: "https://turbothao.vercel.app/our-services",
+    images: [{ url: "https://turbothao.vercel.app/images/heroes/our-services.jpg", alt: "Services at TurboThao Nails and Spa" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Services | TurboThao Nails and Spa",
+    description: "Explore our full range of nail care, waxing, eyelash, and spa services in Glendale, AZ.",
+    images: ["https://turbothao.vercel.app/images/heroes/our-services.jpg"],
+  },
 };
 
 const services = [
