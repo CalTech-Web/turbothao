@@ -109,7 +109,7 @@ export default function OurServicesPage() {
                 </div>
                 <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                   <div className="flex items-center gap-3 mb-4">
-                    <Image src={service.icon} alt="" width={40} height={40} className="h-10 w-10" />
+                    <Image src={service.icon} alt={`${service.title} icon`} width={40} height={40} className="h-10 w-10" />
                     <h2 className="font-heading text-2xl font-bold text-text-primary md:text-3xl">
                       {service.title}
                     </h2>
@@ -122,7 +122,7 @@ export default function OurServicesPage() {
                       href={service.href}
                       className="inline-block rounded-full border-2 border-accent-pink px-8 py-3 text-sm font-semibold text-accent-pink transition-all hover:bg-accent-pink hover:text-white"
                     >
-                      Learn More
+                      View {service.title}
                     </Link>
                     <a
                       href={BOOKING_URL}

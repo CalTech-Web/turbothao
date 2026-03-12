@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { CONTACT_INFO } from "@/lib/constants";
 import ContactForm from "@/components/ContactForm";
 import BookingCTA from "@/components/BookingCTA";
@@ -50,6 +51,13 @@ export default function ContactUsPage() {
       {/* Contact Content */}
       <section className="bg-white py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6">
+          <p className="mb-10 text-center text-base italic text-text-secondary">
+            Have a question or want to book? We&apos;re here to help. You can also{" "}
+            <Link href="/our-services" className="font-medium text-accent-pink hover:text-accent-pink-light transition-colors">
+              browse our nail, waxing, and spa services
+            </Link>{" "}
+            before reaching out.
+          </p>
           <div className="grid gap-12 lg:grid-cols-2">
             {/* Contact Info Cards */}
             <div className="space-y-6">

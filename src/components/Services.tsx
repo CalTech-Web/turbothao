@@ -67,7 +67,7 @@ export default function Services() {
                 </div>
               </div>
               <div className="flex items-center gap-3 p-5">
-                <Image src={service.icon} alt="" width={32} height={32} className="h-8 w-8" />
+                <Image src={service.icon} alt={`${service.title} icon`} width={32} height={32} className="h-8 w-8" />
                 <h3 className="font-heading text-sm font-bold text-text-primary">
                   {service.title}
                 </h3>

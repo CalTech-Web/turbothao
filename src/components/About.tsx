@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BUSINESS_INFO, EXPERTISE } from "@/lib/constants";
 import SectionHeading from "./SectionHeading";
 
@@ -70,6 +71,14 @@ export default function About() {
               </article>
             );
           })}
+        </div>
+        <div className="mt-10 text-center">
+          <Link
+            href="/our-services"
+            className="inline-block rounded-full border-2 border-accent-pink px-8 py-3 text-sm font-semibold text-accent-pink transition-all hover:bg-accent-pink hover:text-white"
+          >
+            Explore All Our Services
+          </Link>
         </div>
       </div>
     </section>
