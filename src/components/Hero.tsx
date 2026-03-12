@@ -11,13 +11,10 @@ export default function Hero() {
         <div className="grid items-center gap-12 lg:grid-cols-[55fr_45fr] lg:gap-16">
           {/* Left Content */}
           <div className="animate-fade-up">
-            <p className="mb-2 text-sm italic tracking-wide text-text-muted">
-              welcome to
-            </p>
             <h1 className="font-script text-[55px] leading-[0.9] text-accent-pink sm:text-[90px] md:text-[110px] lg:text-[128px]">
               {BUSINESS_INFO.tagline}
             </h1>
-            <p className="mt-6 text-lg italic leading-relaxed text-text-secondary md:text-xl">
+            <p className="mt-6 text-lg font-medium leading-relaxed text-text-secondary md:text-xl">
               {BUSINESS_INFO.headline}
             </p>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-text-muted">

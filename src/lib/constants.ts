@@ -4,7 +4,7 @@ export const BOOKING_URL =
 export const BUSINESS_INFO = {
   name: "TurboThao Nails and Spa",
   tagline: "TurboThao Nails!",
-  headline: "Nail care, waxing, and eyelash extensions in Glendale AZ",
+  headline: "Glendale's premier nail studio for artistry, lashes & luxurious spa treatments.",
   description:
     "Experience where beauty meets precision and relaxation. From stunning nail artistry and acrylics to luxurious pedicures and waxing, we transform your beauty routine into a pampering experience you'll love.",
   aboutTitle: "Who We Are",

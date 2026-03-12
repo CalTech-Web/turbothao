@@ -57,7 +57,7 @@ export default function Navbar() {
                 <button
                   onClick={() => setDropdownOpen(!dropdownOpen)}
                   aria-expanded={dropdownOpen}
-                  className="flex items-center gap-1 text-sm italic text-text-secondary transition-colors hover:text-accent-pink"
+                  className="flex items-center gap-1 text-sm font-medium text-text-secondary transition-colors hover:text-accent-pink"
                 >
                   {link.label}
                   <svg className={`h-3 w-3 transition-transform ${dropdownOpen ? "rotate-180" : ""}`} viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><path d="M3 4.5L6 7.5L9 4.5" /></svg>
@@ -69,7 +69,7 @@ export default function Navbar() {
                         key={child.label}
                         href={child.href}
                         onClick={handleLinkClick}
-                        className="block px-5 py-2.5 text-sm italic text-text-secondary transition-colors hover:text-accent-pink hover:bg-primary-soft"
+                        className="block px-5 py-2.5 text-sm font-medium text-text-secondary transition-colors hover:text-accent-pink hover:bg-primary-soft"
                       >
                         {child.label}
                       </Link>
@@ -81,7 +81,7 @@ export default function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-sm italic text-text-secondary transition-colors hover:text-accent-pink"
+                className="text-sm font-medium text-text-secondary transition-colors hover:text-accent-pink"
               >
                 {link.label}
               </Link>
@@ -119,7 +119,7 @@ export default function Navbar() {
               <Link
                 href={link.href}
                 onClick={handleLinkClick}
-                className="block py-3 text-base italic text-text-secondary transition-colors hover:text-accent-pink"
+                className="block py-3 text-base font-medium text-text-secondary transition-colors hover:text-accent-pink"
               >
                 {link.label}
               </Link>
@@ -130,7 +130,7 @@ export default function Navbar() {
                       key={child.label}
                       href={child.href}
                       onClick={handleLinkClick}
-                      className="block py-2 pl-4 text-sm italic text-text-muted transition-colors hover:text-accent-pink"
+                      className="block py-2 pl-4 text-sm font-medium text-text-muted transition-colors hover:text-accent-pink"
                     >
                       {child.label}
                     </Link>
