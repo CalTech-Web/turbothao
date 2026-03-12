@@ -59,6 +59,12 @@ export default function Services() {
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
+                {/* Pink gradient hover overlay */}
+                <div className="absolute inset-0 flex items-end justify-center pb-5 bg-gradient-to-t from-[rgba(242,4,115,0.72)] via-[rgba(242,4,115,0.2)] to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                  <span className="translate-y-3 transform rounded-full bg-white px-4 py-1.5 text-xs font-semibold text-accent-pink transition-transform duration-500 group-hover:translate-y-0">
+                    View Services →
+                  </span>
+                </div>
               </div>
               <div className="flex items-center gap-3 p-5">
                 <Image src={service.icon} alt="" width={32} height={32} className="h-8 w-8" />
